@@ -33,22 +33,32 @@ jobs:
           GH_OWNER: ${{ github.repository_owner }}
           GH_REPO: ${{ github.event.repository.name }}
         run: |
-          # Base64 encode the file
-          CONTENT=$(base64 -w 0 datasets-index.json)
-
           # Get current file SHA (needed for updates)
-          SHA=$(curl -s -H "Authorization: Bearer $GH_PAT" "https://api.github.com/repos/$GH_OWNER/$GH_REPO/contents/datasets-index.json" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('sha',''))" 2>/dev/null || echo "")
+          export SHA=$(curl -s -H "Authorization: Bearer $GH_PAT" "https://api.github.com/repos/$GH_OWNER/$GH_REPO/contents/datasets-index.json" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('sha',''))" 2>/dev/null || echo "")
 
-          # Build the JSON payload
-          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          # Build the JSON payload in a file -- passing base64 content as a
+          # curl -d argument blows past the OS argv length limit once the
+          # file is a few hundred items, so write it and use --data-binary @file instead.
+          export TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          python3 -c "
+import base64, json, os, sys
 
-          if [ -z "$SHA" ]; then
-            PAYLOAD="{\"message\":\"chore: update datasets index [$TIMESTAMP]\",\"content\":\"$CONTENT\"}"
-          else
-            PAYLOAD="{\"message\":\"chore: update datasets index [$TIMESTAMP]\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}"
-          fi
+with open('datasets-index.json', 'rb') as f:
+    content = base64.b64encode(f.read()).decode()
+
+payload = {
+    'message': f'chore: update datasets index [{os.environ[\"TIMESTAMP\"]}]',
+    'content': content,
+}
+sha = os.environ.get('SHA', '')
+if sha:
+    payload['sha'] = sha
+
+with open('payload.json', 'w') as f:
+    json.dump(payload, f)
+"
 
           # Push the file via API
-          curl -s -X PUT -H "Authorization: Bearer $GH_PAT" -H "Content-Type: application/json" -d "$PAYLOAD" "https://api.github.com/repos/$GH_OWNER/$GH_REPO/contents/datasets-index.json"
+          curl -s -X PUT -H "Authorization: Bearer $GH_PAT" -H "Content-Type: application/json" --data-binary @payload.json "https://api.github.com/repos/$GH_OWNER/$GH_REPO/contents/datasets-index.json"
 
           echo "Done updating datasets-index.json"
