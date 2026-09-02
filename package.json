@@ -1,0 +1,12 @@
+{
+  "name": "datasets-index-sync",
+  "version": "1.0.0",
+  "description": "Webflow Datasets CMS index sync script",
+  "main": "sync-datasets-index.js",
+  "scripts": {
+    "sync": "node sync-datasets-index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
