@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T16:32:03.344Z",
+  "lastUpdated": "2026-09-03T16:39:06.970Z",
   "totalItems": 596,
   "items": [
     {
@@ -5638,7 +5638,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "2.53",
       "unitType": "hours",
       "channel": "Mono",
@@ -5668,7 +5670,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "50.4",
       "unitType": "hours",
       "channel": "Mono",
@@ -5698,7 +5702,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "30.89",
       "unitType": "hours",
       "channel": "Mono",
@@ -5728,7 +5734,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "244.09",
       "unitType": "hours",
       "channel": "Mono",
@@ -5758,7 +5766,9 @@
       "country": "China",
       "languageGroup": "Cantonese",
       "audioType": "Conversational Speech",
-      "domainContent": "Business Meetings",
+      "domainContent": [
+        "Business Meetings"
+      ],
       "volume": "98.35",
       "unitType": "hours",
       "channel": "Stereo",
@@ -5788,7 +5798,9 @@
       "country": "United Arab Emirates",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "32",
       "unitType": "hours",
       "channel": "Mono",
@@ -5819,7 +5831,9 @@
       "country": "Russia/Germany",
       "languageGroup": "Russian/German",
       "audioType": "TTS Scripted Speech",
-      "domainContent": "Text-to-Speech Voice Talent",
+      "domainContent": [
+        "Text-to-Speech Voice Talent"
+      ],
       "volume": "2.32",
       "unitType": "hours",
       "channel": "Mono",
@@ -5849,7 +5863,9 @@
       "country": "Indonesia",
       "languageGroup": "Indonesian",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "150",
       "unitType": "hours",
       "channel": "Stereo",
@@ -5879,7 +5895,9 @@
       "country": "Turkey",
       "languageGroup": "Turkish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "738",
       "unitType": "hours",
       "channel": "Mono",
@@ -5907,7 +5925,9 @@
       "country": "Global coverage",
       "languageGroup": "Multilanguage",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech, national/international political and economic news articles)",
+      "domainContent": [
+        "News (read speech, national/international political and economic news articles)"
+      ],
       "volume": "450",
       "unitType": "hours",
       "channel": "Mono",
@@ -5952,7 +5972,34 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Broadcast Speech",
-      "domainContent": "Agriculture & plants; Animals & Pets; Art & Culture; Beauty & Fashion; Career; Clothing; Education; Entertainment; Family & Relationships; Finance & Insurance; Food; Health; History; Hospitality; Legal; Leisure; News & Politics; Religion & Spirituality; Retail; Science & Technology; Social Networks; Sports; Telecom; Travel; Weather; Others",
+      "domainContent": [
+        "Agriculture & plants",
+        "Animals & Pets",
+        "Art & Culture",
+        "Beauty & Fashion",
+        "Career",
+        "Clothing",
+        "Education",
+        "Entertainment",
+        "Family & Relationships",
+        "Finance & Insurance",
+        "Food",
+        "Health",
+        "History",
+        "Hospitality",
+        "Legal",
+        "Leisure",
+        "News & Politics",
+        "Religion & Spirituality",
+        "Retail",
+        "Science & Technology",
+        "Social Networks",
+        "Sports",
+        "Telecom",
+        "Travel",
+        "Weather",
+        "Others"
+      ],
       "volume": "1196",
       "unitType": "hours",
       "channel": "Mono",
@@ -5982,7 +6029,21 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Conversational Speech",
-      "domainContent": "clothing; culture; education; finance; food; health; history; hospitality; insurance; media/entertainment; sports; travel/holiday; weather and work",
+      "domainContent": [
+        "clothing",
+        "culture",
+        "education",
+        "finance",
+        "food",
+        "health",
+        "history",
+        "hospitality",
+        "insurance",
+        "media/entertainment",
+        "sports",
+        "travel/holiday",
+        "weather and work"
+      ],
       "volume": "256",
       "unitType": "hours",
       "channel": "Mono",
@@ -6012,7 +6073,21 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Conversational Speech",
-      "domainContent": "clothing; culture; education; finance; food; health; history; hospitality; insurance; media/entertainment; sports; travel/holiday; weather and work",
+      "domainContent": [
+        "clothing",
+        "culture",
+        "education",
+        "finance",
+        "food",
+        "health",
+        "history",
+        "hospitality",
+        "insurance",
+        "media/entertainment",
+        "sports",
+        "travel/holiday",
+        "weather and work"
+      ],
       "volume": "159",
       "unitType": "hours",
       "channel": "Mono",
@@ -6042,7 +6117,21 @@
       "country": "Spain",
       "languageGroup": "Spanish",
       "audioType": "Conversational Speech",
-      "domainContent": "clothing; culture; education; finance; food; health; history; hospitality; insurance; media/entertainment; sports; travel/holiday; weather and work",
+      "domainContent": [
+        "clothing",
+        "culture",
+        "education",
+        "finance",
+        "food",
+        "health",
+        "history",
+        "hospitality",
+        "insurance",
+        "media/entertainment",
+        "sports",
+        "travel/holiday",
+        "weather and work"
+      ],
       "volume": "223",
       "unitType": "hours",
       "channel": "Mono",
@@ -6072,7 +6161,21 @@
       "country": "Germany",
       "languageGroup": "German",
       "audioType": "Conversational Speech",
-      "domainContent": "clothing; culture; education; finance; food; health; history; hospitality; insurance; media/entertainment; sports; travel/holiday; weather and work",
+      "domainContent": [
+        "clothing",
+        "culture",
+        "education",
+        "finance",
+        "food",
+        "health",
+        "history",
+        "hospitality",
+        "insurance",
+        "media/entertainment",
+        "sports",
+        "travel/holiday",
+        "weather and work"
+      ],
       "volume": "104",
       "unitType": "hours",
       "channel": "Mono",
@@ -6102,7 +6205,21 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "clothing; culture; education; finance; food; health; history; hospitality; insurance; media/entertainment; sports; travel/holiday; weather and work",
+      "domainContent": [
+        "clothing",
+        "culture",
+        "education",
+        "finance",
+        "food",
+        "health",
+        "history",
+        "hospitality",
+        "insurance",
+        "media/entertainment",
+        "sports",
+        "travel/holiday",
+        "weather and work"
+      ],
       "volume": "50",
       "unitType": "hours",
       "channel": "Mono",
@@ -6132,7 +6249,21 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "clothing; culture; education; finance; food; health; history; hospitality; insurance; media/entertainment; sports; travel/holiday; weather and work",
+      "domainContent": [
+        "clothing",
+        "culture",
+        "education",
+        "finance",
+        "food",
+        "health",
+        "history",
+        "hospitality",
+        "insurance",
+        "media/entertainment",
+        "sports",
+        "travel/holiday",
+        "weather and work"
+      ],
       "volume": "143",
       "unitType": "hours",
       "channel": "Mono",
@@ -6162,7 +6293,9 @@
       "country": "China",
       "languageGroup": "Mandarin Chinese",
       "audioType": "Scripted Speech",
-      "domainContent": "Non-native Chinese Speech",
+      "domainContent": [
+        "Non-native Chinese Speech"
+      ],
       "volume": "200",
       "unitType": "hours",
       "channel": "Mono",
@@ -6192,7 +6325,9 @@
       "country": "China",
       "languageGroup": "Wuhan dialect",
       "audioType": "Conversational Speech",
-      "domainContent": "General Conversational Speech",
+      "domainContent": [
+        "General Conversational Speech"
+      ],
       "volume": "58.6",
       "unitType": "hours",
       "channel": "Mono",
@@ -6222,7 +6357,9 @@
       "country": "China",
       "languageGroup": "Wuhan dialect",
       "audioType": "Conversational Speech",
-      "domainContent": "General Conversational Speech",
+      "domainContent": [
+        "General Conversational Speech"
+      ],
       "volume": "44.71",
       "unitType": "hours",
       "channel": "Mono",
@@ -6252,7 +6389,9 @@
       "country": "China",
       "languageGroup": "Dongbei dialect",
       "audioType": "Conversational Speech",
-      "domainContent": "General Conversational Speech",
+      "domainContent": [
+        "General Conversational Speech"
+      ],
       "volume": "75.2",
       "unitType": "hours",
       "channel": "Mono",
@@ -6282,7 +6421,9 @@
       "country": "China",
       "languageGroup": "Dongbei dialect",
       "audioType": "Conversational Speech",
-      "domainContent": "General Conversational Speech",
+      "domainContent": [
+        "General Conversational Speech"
+      ],
       "volume": "84.6",
       "unitType": "hours",
       "channel": "Mono",
@@ -6312,7 +6453,9 @@
       "country": "China",
       "languageGroup": "Shanghai dialect",
       "audioType": "Conversational Speech",
-      "domainContent": "General Conversational Speech",
+      "domainContent": [
+        "General Conversational Speech"
+      ],
       "volume": "4.5",
       "unitType": "hours",
       "channel": "Mono",
@@ -6342,7 +6485,9 @@
       "country": "China",
       "languageGroup": "Shanghai dialect",
       "audioType": "Conversational Speech",
-      "domainContent": "General Conversational Speech",
+      "domainContent": [
+        "General Conversational Speech"
+      ],
       "volume": "21",
       "unitType": "hours",
       "channel": "Mono",
@@ -6372,7 +6517,9 @@
       "country": "United Kingdom",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "50",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6402,7 +6549,9 @@
       "country": "China",
       "languageGroup": "N/A",
       "audioType": "Human Sound",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "70",
       "unitType": "hours",
       "channel": "Mono",
@@ -6432,7 +6581,9 @@
       "country": "United Arab Emirates (UAE)",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "170",
       "unitType": "hours",
       "channel": "Mono",
@@ -6462,7 +6613,9 @@
       "country": "Poland",
       "languageGroup": "Polish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "293",
       "unitType": "hours",
       "channel": "Mono",
@@ -6492,7 +6645,9 @@
       "country": "Hungary",
       "languageGroup": "Hungarian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "286",
       "unitType": "hours",
       "channel": "Mono",
@@ -6522,7 +6677,9 @@
       "country": "Greece",
       "languageGroup": "Greek",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "191",
       "unitType": "hours",
       "channel": "Mono",
@@ -6552,7 +6709,9 @@
       "country": "Croatia",
       "languageGroup": "Croatian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "263",
       "unitType": "hours",
       "channel": "Mono",
@@ -6582,7 +6741,9 @@
       "country": "Saudi Arabia",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "322",
       "unitType": "hours",
       "channel": "Mono",
@@ -6612,7 +6773,9 @@
       "country": "Egypt",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "352",
       "unitType": "hours",
       "channel": "Mono",
@@ -6642,7 +6805,9 @@
       "country": "Morocco",
       "languageGroup": "Arabic",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "33",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6672,7 +6837,9 @@
       "country": "Bulgaria",
       "languageGroup": "Bulgarian",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "22",
       "unitType": "hours",
       "channel": "Mono",
@@ -6702,7 +6869,9 @@
       "country": "India",
       "languageGroup": "Marathi",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "52",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6732,7 +6901,9 @@
       "country": "India",
       "languageGroup": "Kannada",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "57",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6762,7 +6933,9 @@
       "country": "Vietnam",
       "languageGroup": "Vietnamese",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "19",
       "unitType": "hours",
       "channel": "Mono",
@@ -6792,7 +6965,14 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "study/major/work; hometown; living arrangements; weather and seasons; punctuality; TV programs/film)",
+      "domainContent": [
+        "study/major/work",
+        "hometown",
+        "living arrangements",
+        "weather and seasons",
+        "punctuality",
+        "TV programs/film)"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -6822,7 +7002,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "62",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6853,7 +7035,9 @@
       "country": "India - Pakistan",
       "languageGroup": "Urdu",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "47.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6883,7 +7067,9 @@
       "country": "United Kingdom",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "150",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6913,7 +7099,9 @@
       "country": "Turkey",
       "languageGroup": "Turkish",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "17",
       "unitType": "hours",
       "channel": "Mono",
@@ -6943,7 +7131,9 @@
       "country": "Turkey",
       "languageGroup": "Turkish",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "41.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -6973,7 +7163,9 @@
       "country": "Thailand",
       "languageGroup": "Thai",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "28.2",
       "unitType": "hours",
       "channel": "Mono",
@@ -7003,7 +7195,9 @@
       "country": "United Kingdom",
       "languageGroup": "English",
       "audioType": "TTS Scripted Speech",
-      "domainContent": "Text-to-Speech Voice Talent",
+      "domainContent": [
+        "Text-to-Speech Voice Talent"
+      ],
       "volume": "10",
       "unitType": "hours",
       "channel": "Mono",
@@ -7033,7 +7227,9 @@
       "country": "United Kingdom",
       "languageGroup": "English",
       "audioType": "TTS Scripted Speech",
-      "domainContent": "Text-to-Speech Voice Talent",
+      "domainContent": [
+        "Text-to-Speech Voice Talent"
+      ],
       "volume": "10",
       "unitType": "hours",
       "channel": "Mono",
@@ -7064,7 +7260,9 @@
       "country": "Sweden - Finland",
       "languageGroup": "Swedish",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "30",
       "unitType": "hours",
       "channel": "Mono",
@@ -7094,7 +7292,9 @@
       "country": "Spain",
       "languageGroup": "Spanish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "46.25",
       "unitType": "hours",
       "channel": "Mono",
@@ -7122,7 +7322,9 @@
       "country": "Russia",
       "languageGroup": "Russian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "46.67",
       "unitType": "hours",
       "channel": "Mono",
@@ -7150,7 +7352,9 @@
       "country": "Japan",
       "languageGroup": "Japanese",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "57.5",
       "unitType": "hours",
       "channel": "Mono",
@@ -7182,7 +7386,9 @@
       "country": "Switzerland",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "53.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -7210,7 +7416,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "53.75",
       "unitType": "hours",
       "channel": "Mono",
@@ -7238,7 +7446,9 @@
       "country": "Netherlands",
       "languageGroup": "Dutch",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "68.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -7266,7 +7476,9 @@
       "country": "Belgium",
       "languageGroup": "Dutch",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "47.92",
       "unitType": "hours",
       "channel": "Mono",
@@ -7294,7 +7506,9 @@
       "country": "Denmark",
       "languageGroup": "Danish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "53.3",
       "unitType": "hours",
       "channel": "Mono",
@@ -7325,7 +7539,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "13.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -7353,7 +7569,9 @@
       "country": "Iran",
       "languageGroup": "Central Kurdish (Iran)",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "5.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7383,7 +7601,9 @@
       "country": "Somalia",
       "languageGroup": "Somali",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "50.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7413,7 +7633,9 @@
       "country": "Slovenia",
       "languageGroup": "Slovenian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "76.67",
       "unitType": "hours",
       "channel": "Mono",
@@ -7441,7 +7663,9 @@
       "country": "Slovakia",
       "languageGroup": "Slovak",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "65",
       "unitType": "hours",
       "channel": "Mono",
@@ -7469,7 +7693,9 @@
       "country": "Russia",
       "languageGroup": "Russian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "180",
       "unitType": "hours",
       "channel": "Mono",
@@ -7499,7 +7725,9 @@
       "country": "Russia",
       "languageGroup": "Russian",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "31",
       "unitType": "hours",
       "channel": "Mono",
@@ -7529,7 +7757,9 @@
       "country": "Russia",
       "languageGroup": "Russian",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "37",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7559,7 +7789,10 @@
       "country": "Romania",
       "languageGroup": "Romanian",
       "audioType": "Conversational Speech",
-      "domainContent": "Leisure; Work and Sport",
+      "domainContent": [
+        "Leisure",
+        "Work and Sport"
+      ],
       "volume": "37",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7589,7 +7822,9 @@
       "country": "Pakistan",
       "languageGroup": "Panjabi",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "20",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7619,7 +7854,9 @@
       "country": "Portugal",
       "languageGroup": "Portuguese",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "36",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7649,7 +7886,9 @@
       "country": "Brazil",
       "languageGroup": "Portuguese",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "33",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7679,7 +7918,9 @@
       "country": "Brazil",
       "languageGroup": "Portuguese",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "26",
       "unitType": "hours",
       "channel": "Mono",
@@ -7710,7 +7951,9 @@
       "country": "Poland",
       "languageGroup": "Polish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "78.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -7738,7 +7981,9 @@
       "country": "Poland",
       "languageGroup": "Polish",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "25",
       "unitType": "hours",
       "channel": "Mono",
@@ -7769,7 +8014,9 @@
       "country": "Afghanistan",
       "languageGroup": "Northern Pashto - Southern Pashto",
       "audioType": "Broadcast Speech",
-      "domainContent": "Broadcast Media (talk shows, interviews, news)",
+      "domainContent": [
+        "Broadcast Media (talk shows, interviews, news)"
+      ],
       "volume": "51",
       "unitType": "hours",
       "channel": "Mono",
@@ -7801,7 +8048,9 @@
       "country": "Afghanistan",
       "languageGroup": "Northern Pashto - Southern Pashto",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "39",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7831,7 +8080,9 @@
       "country": "Afghanistan",
       "languageGroup": "Northern Pashto - Southern Pashto",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "55.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -7861,7 +8112,9 @@
       "country": "United Arab Emirates (UAE)",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "31.66",
       "unitType": "hours",
       "channel": "Mono",
@@ -7889,7 +8142,9 @@
       "country": "United Arab Emirates (UAE)",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "48.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -7919,7 +8174,9 @@
       "country": "Turkey",
       "languageGroup": "Turkish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "118.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -7947,7 +8204,9 @@
       "country": "Turkey",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "31.66",
       "unitType": "hours",
       "channel": "Mono",
@@ -7975,7 +8234,9 @@
       "country": "United Arab Emirates (UAE)",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "33.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8007,7 +8268,10 @@
       "country": "Netherlands",
       "languageGroup": "Dutch",
       "audioType": "Conversational Speech",
-      "domainContent": "Holiday/Leisure; Work and Sport",
+      "domainContent": [
+        "Holiday/Leisure",
+        "Work and Sport"
+      ],
       "volume": "36.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8037,7 +8301,9 @@
       "country": "Tunisia",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "12",
       "unitType": "hours",
       "channel": "Mono",
@@ -8071,7 +8337,9 @@
       "country": "India",
       "languageGroup": "Marathi",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "15",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8101,7 +8369,9 @@
       "country": "China",
       "languageGroup": "Mandarin Chinese",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "26",
       "unitType": "hours",
       "channel": "Mono",
@@ -8131,7 +8401,9 @@
       "country": "China",
       "languageGroup": "Mandarin Chinese",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "323.3",
       "unitType": "hours",
       "channel": "Mono",
@@ -8161,7 +8433,9 @@
       "country": "Luxembourg",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "33.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8189,7 +8463,9 @@
       "country": "Luxembourg",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "45",
       "unitType": "hours",
       "channel": "Mono",
@@ -8217,7 +8493,9 @@
       "country": "South Korea",
       "languageGroup": "Korean",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "20",
       "unitType": "hours",
       "channel": "Mono",
@@ -8247,7 +8525,9 @@
       "country": "India",
       "languageGroup": "Kannada",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "15",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8277,7 +8557,9 @@
       "country": "Japan",
       "languageGroup": "Japanese",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8309,7 +8591,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "103.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8337,7 +8621,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "228.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8365,7 +8651,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "38.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8393,7 +8681,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "TTS Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "3",
       "unitType": "hours",
       "channel": "Mono",
@@ -8423,7 +8713,10 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Conversational Speech",
-      "domainContent": "Travel; Family and Holidays",
+      "domainContent": [
+        "Travel",
+        "Family and Holidays"
+      ],
       "volume": "36",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8453,7 +8746,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "47.25",
       "unitType": "hours",
       "channel": "Mono",
@@ -8483,7 +8778,9 @@
       "country": "Italy",
       "languageGroup": "Italian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "44.25",
       "unitType": "hours",
       "channel": "Mono",
@@ -8513,7 +8810,9 @@
       "country": "Hungary",
       "languageGroup": "Hungarian",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "65",
       "unitType": "hours",
       "channel": "Mono",
@@ -8541,7 +8840,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "32.25",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8571,7 +8872,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "224",
       "unitType": "hours",
       "channel": "Mono",
@@ -8601,7 +8904,10 @@
       "country": "Israel",
       "languageGroup": "Hebrew",
       "audioType": "Conversational Speech",
-      "domainContent": "Friends; Family and Studies",
+      "domainContent": [
+        "Friends",
+        "Family and Studies"
+      ],
       "volume": "34.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8631,7 +8937,9 @@
       "country": "Nigeria",
       "languageGroup": "Hausa",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "33",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8661,7 +8969,9 @@
       "country": "Cameroon",
       "languageGroup": "Hausa",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "20",
       "unitType": "hours",
       "channel": "Mono",
@@ -8691,7 +9001,9 @@
       "country": "Germany",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "268.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -8719,7 +9031,9 @@
       "country": "Germany",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "31.67",
       "unitType": "hours",
       "channel": "Mono",
@@ -8747,7 +9061,9 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "26",
       "unitType": "hours",
       "channel": "Mono",
@@ -8778,7 +9094,9 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "25",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8808,7 +9126,9 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "113.7",
       "unitType": "hours",
       "channel": "Mono",
@@ -8837,7 +9157,9 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "305",
       "unitType": "hours",
       "channel": "Mono",
@@ -8867,7 +9189,9 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "41.67",
       "unitType": "hours",
       "channel": "Mono",
@@ -8895,7 +9219,9 @@
       "country": "Canada",
       "languageGroup": "French",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "9",
       "unitType": "hours",
       "channel": "Stereo",
@@ -8925,7 +9251,9 @@
       "country": "Canada",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "46",
       "unitType": "hours",
       "channel": "Mono",
@@ -8955,7 +9283,9 @@
       "country": "Canada",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "131",
       "unitType": "hours",
       "channel": "Mono",
@@ -8985,7 +9315,9 @@
       "country": "Belgium",
       "languageGroup": "Dutch",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "80",
       "unitType": "hours",
       "channel": "Mono",
@@ -9013,7 +9345,9 @@
       "country": "Iran",
       "languageGroup": "Iranian Persian (Farsi)",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "30.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9043,7 +9377,9 @@
       "country": "Iran",
       "languageGroup": "Iranian Persian (Farsi)",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "85",
       "unitType": "hours",
       "channel": "Mono",
@@ -9073,7 +9409,9 @@
       "country": "Spain",
       "languageGroup": "Spanish",
       "audioType": "TTS Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "1.45",
       "unitType": "hours",
       "channel": "Mono",
@@ -9103,7 +9441,9 @@
       "country": "Spain",
       "languageGroup": "Spanish",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "39.75",
       "unitType": "hours",
       "channel": "Mono",
@@ -9134,7 +9474,9 @@
       "country": "Chile-Columbia",
       "languageGroup": "Spanish",
       "audioType": "Conversational Speech",
-      "domainContent": "Call Centre (Banking & Telco)",
+      "domainContent": [
+        "Call Centre (Banking & Telco)"
+      ],
       "volume": "22",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9164,7 +9506,9 @@
       "country": "Costa Rica",
       "languageGroup": "Spanish",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "17",
       "unitType": "hours",
       "channel": "Mono",
@@ -9195,7 +9539,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "67.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9225,7 +9571,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "217",
       "unitType": "hours",
       "channel": "Mono",
@@ -9255,7 +9603,9 @@
       "country": "Philippines",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "53.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9285,7 +9635,9 @@
       "country": "Canada",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "144",
       "unitType": "hours",
       "channel": "Mono",
@@ -9315,7 +9667,9 @@
       "country": "Egypt",
       "languageGroup": "English",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "28.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9345,7 +9699,9 @@
       "country": "Algeria",
       "languageGroup": "Arabic",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "29",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9376,7 +9732,9 @@
       "country": "Netherland - Belgium",
       "languageGroup": "Dutch",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "27",
       "unitType": "hours",
       "channel": "Mono",
@@ -9405,7 +9763,9 @@
       "country": "Germany",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "25",
       "unitType": "hours",
       "channel": "Mono",
@@ -9435,7 +9795,9 @@
       "country": "Germany",
       "languageGroup": "German",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "16.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9465,7 +9827,9 @@
       "country": "Afghanistan",
       "languageGroup": "Dari",
       "audioType": "Broadcast Speech",
-      "domainContent": "Broadcast Media (talk shows, interviews, news)",
+      "domainContent": [
+        "Broadcast Media (talk shows, interviews, news)"
+      ],
       "volume": "49",
       "unitType": "hours",
       "channel": "Mono",
@@ -9499,7 +9863,9 @@
       "country": "Afghanistan",
       "languageGroup": "Dari",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "40",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9529,7 +9895,9 @@
       "country": "Czech Republic",
       "languageGroup": "Czech",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "93.33",
       "unitType": "hours",
       "channel": "Mono",
@@ -9557,7 +9925,9 @@
       "country": "Czech Republic",
       "languageGroup": "Czech",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "31",
       "unitType": "hours",
       "channel": "Mono",
@@ -9587,7 +9957,9 @@
       "country": "Croatia",
       "languageGroup": "Croatian",
       "audioType": "Scripted Speech",
-      "domainContent": "News (read speech)",
+      "domainContent": [
+        "News (read speech)"
+      ],
       "volume": "11",
       "unitType": "hours",
       "channel": "Mono",
@@ -9618,7 +9990,10 @@
       "country": "Croatia",
       "languageGroup": "Croatian",
       "audioType": "Conversational Speech",
-      "domainContent": "News & Current Affairs; Health and Sport",
+      "domainContent": [
+        "News & Current Affairs",
+        "Health and Sport"
+      ],
       "volume": "39.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9648,7 +10023,9 @@
       "country": "United Arab Emirates (UAE) - Saudi Arabia",
       "languageGroup": "Arabic",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "86",
       "unitType": "hours",
       "channel": "Mono",
@@ -9678,7 +10055,10 @@
       "country": "Bulgaria",
       "languageGroup": "Bulgarian",
       "audioType": "Conversational Speech",
-      "domainContent": "Holiday/Leisure; Movies/TV Shows and Work",
+      "domainContent": [
+        "Holiday/Leisure",
+        "Movies/TV Shows and Work"
+      ],
       "volume": "38.5",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9708,7 +10088,9 @@
       "country": "Bangladesh",
       "languageGroup": "Bengali",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "47",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9739,7 +10121,9 @@
       "country": "Belgium",
       "languageGroup": "French",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "76.67",
       "unitType": "hours",
       "channel": "Mono",
@@ -9769,7 +10153,9 @@
       "country": "Indonesia",
       "languageGroup": "Indonesian",
       "audioType": "Conversational Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "31",
       "unitType": "hours",
       "channel": "Stereo",
@@ -9799,7 +10185,9 @@
       "country": "Australia",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "118",
       "unitType": "hours",
       "channel": "Mono",
@@ -9829,7 +10217,9 @@
       "country": "Australia",
       "languageGroup": "English",
       "audioType": "Scripted Speech",
-      "domainContent": "General / not domain-specific (read speech, digits, names, command & control)",
+      "domainContent": [
+        "General / not domain-specific (read speech, digits, names, command & control)"
+      ],
       "volume": "92",
       "unitType": "hours",
       "channel": "Mono",
@@ -9859,7 +10249,10 @@
       "country": "The Netherlands",
       "languageGroup": "Dutch",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce; retail",
+      "domainContent": [
+        "Ecommerce",
+        "retail"
+      ],
       "volume": "500",
       "unitType": "hours",
       "channel": "Mono",
@@ -9885,7 +10278,10 @@
       "country": "Belgium",
       "languageGroup": "Dutch",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce; retail",
+      "domainContent": [
+        "Ecommerce",
+        "retail"
+      ],
       "volume": "600",
       "unitType": "hours",
       "channel": "Mono",
@@ -9911,7 +10307,9 @@
       "country": "France",
       "languageGroup": "French",
       "audioType": "Real world call center audio",
-      "domainContent": "Mix",
+      "domainContent": [
+        "Mix"
+      ],
       "volume": "300",
       "unitType": "hours",
       "channel": "Mono",
@@ -9937,7 +10335,12 @@
       "country": "Belgium",
       "languageGroup": "French",
       "audioType": "Real world call center audio",
-      "domainContent": "Mix utility; telecom; energy; retail",
+      "domainContent": [
+        "Mix utility",
+        "telecom",
+        "energy",
+        "retail"
+      ],
       "volume": "914",
       "unitType": "hours",
       "channel": "Mono",
@@ -9963,7 +10366,9 @@
       "country": "Egypt",
       "languageGroup": "Arabic",
       "audioType": "Real world call center audio",
-      "domainContent": "Telecom",
+      "domainContent": [
+        "Telecom"
+      ],
       "volume": "300",
       "unitType": "hours",
       "channel": "Mono",
@@ -9989,7 +10394,9 @@
       "country": "Egypt",
       "languageGroup": "Arabic",
       "audioType": "Real world call center audio",
-      "domainContent": "F&B",
+      "domainContent": [
+        "F&B"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10015,7 +10422,9 @@
       "country": "Thailand",
       "languageGroup": "Thai",
       "audioType": "Simulated Conversations",
-      "domainContent": "Government / Telecom",
+      "domainContent": [
+        "Government / Telecom"
+      ],
       "volume": "9000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10041,7 +10450,11 @@
       "country": "Thailand",
       "languageGroup": "Thai",
       "audioType": "Simulated Conversations",
-      "domainContent": "Call center; diverse domains; Human to machine",
+      "domainContent": [
+        "Call center",
+        "diverse domains",
+        "Human to machine"
+      ],
       "volume": "125",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10067,7 +10480,11 @@
       "country": "Thailand",
       "languageGroup": "Thai",
       "audioType": "Simulated Conversations",
-      "domainContent": "Call center; diverse domains; Human to human",
+      "domainContent": [
+        "Call center",
+        "diverse domains",
+        "Human to human"
+      ],
       "volume": "175",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10093,7 +10510,9 @@
       "country": "India",
       "languageGroup": "Telugu",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce",
+      "domainContent": [
+        "Ecommerce"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10119,7 +10538,9 @@
       "country": "India",
       "languageGroup": "Telugu",
       "audioType": "Real world call center audio",
-      "domainContent": "Loan Recovery",
+      "domainContent": [
+        "Loan Recovery"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10145,7 +10566,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Telecom",
+      "domainContent": [
+        "Telecom"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10171,7 +10594,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Ed Tech",
+      "domainContent": [
+        "Ed Tech"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10197,7 +10622,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Logistics",
+      "domainContent": [
+        "Logistics"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10223,7 +10650,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Real Estate",
+      "domainContent": [
+        "Real Estate"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10249,7 +10678,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Travel & Hospitality",
+      "domainContent": [
+        "Travel & Hospitality"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10275,7 +10706,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Banking",
+      "domainContent": [
+        "Banking"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10301,7 +10734,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce",
+      "domainContent": [
+        "Ecommerce"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10327,7 +10762,9 @@
       "country": "India",
       "languageGroup": "Tamil",
       "audioType": "Real world call center audio",
-      "domainContent": "Loan Recovery",
+      "domainContent": [
+        "Loan Recovery"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10353,7 +10790,9 @@
       "country": "Philippines",
       "languageGroup": "Tagalog",
       "audioType": "Simulated Conversations",
-      "domainContent": "Diverse",
+      "domainContent": [
+        "Diverse"
+      ],
       "volume": "450",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10379,7 +10818,9 @@
       "country": "Spain",
       "languageGroup": "Spanish",
       "audioType": "Real world call center audio",
-      "domainContent": "Mix Telecom / Energy / Medicare",
+      "domainContent": [
+        "Mix Telecom / Energy / Medicare"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10405,7 +10846,9 @@
       "country": "India",
       "languageGroup": "Malayalam",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce",
+      "domainContent": [
+        "Ecommerce"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10431,7 +10874,9 @@
       "country": "India",
       "languageGroup": "Malayalam",
       "audioType": "Real world call center audio",
-      "domainContent": "Loan Recovery",
+      "domainContent": [
+        "Loan Recovery"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10457,7 +10902,9 @@
       "country": "India",
       "languageGroup": "Kannada",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce",
+      "domainContent": [
+        "Ecommerce"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10483,7 +10930,9 @@
       "country": "India",
       "languageGroup": "Kannada",
       "audioType": "Real world call center audio",
-      "domainContent": "Loan Recovery",
+      "domainContent": [
+        "Loan Recovery"
+      ],
       "volume": "500",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10509,7 +10958,9 @@
       "country": "Indonesia",
       "languageGroup": "Indonesian",
       "audioType": "Real world call center audio",
-      "domainContent": "Finance & Banking",
+      "domainContent": [
+        "Finance & Banking"
+      ],
       "volume": "400",
       "unitType": "hours",
       "channel": "Mono",
@@ -10535,7 +10986,9 @@
       "country": "Indonesia",
       "languageGroup": "Indonesian",
       "audioType": "Real world call center audio",
-      "domainContent": "Fintech / Telecom",
+      "domainContent": [
+        "Fintech / Telecom"
+      ],
       "volume": "420",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10561,7 +11014,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Telecom",
+      "domainContent": [
+        "Telecom"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10587,7 +11042,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Automotive",
+      "domainContent": [
+        "Automotive"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10613,7 +11070,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Healthcare",
+      "domainContent": [
+        "Healthcare"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10639,7 +11098,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Banking & Finance",
+      "domainContent": [
+        "Banking & Finance"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10665,7 +11126,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Real Estate",
+      "domainContent": [
+        "Real Estate"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10691,7 +11154,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Car Sale (Car24)",
+      "domainContent": [
+        "Car Sale (Car24)"
+      ],
       "volume": "96",
       "unitType": "hours",
       "channel": "Mono",
@@ -10717,7 +11182,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Loan Promotion",
+      "domainContent": [
+        "Loan Promotion"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10743,7 +11210,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "My Operator",
+      "domainContent": [
+        "My Operator"
+      ],
       "volume": "105",
       "unitType": "hours",
       "channel": "Mono",
@@ -10769,7 +11238,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Loan Recovery",
+      "domainContent": [
+        "Loan Recovery"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10795,7 +11266,9 @@
       "country": "India",
       "languageGroup": "Hindi",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce",
+      "domainContent": [
+        "Ecommerce"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10821,7 +11294,11 @@
       "country": "Multiple",
       "languageGroup": "English",
       "audioType": "Simulated Conversations",
-      "domainContent": "Call center; different moods; diverse domains",
+      "domainContent": [
+        "Call center",
+        "different moods",
+        "diverse domains"
+      ],
       "volume": "150",
       "unitType": "hours",
       "channel": "Stereo",
@@ -10847,7 +11324,10 @@
       "country": "Philippines",
       "languageGroup": "English",
       "audioType": "Simulated Conversations",
-      "domainContent": "Call center; diverse domains (studio environment)",
+      "domainContent": [
+        "Call center",
+        "diverse domains (studio environment)"
+      ],
       "volume": "130",
       "unitType": "hours",
       "channel": "Mono",
@@ -10873,7 +11353,10 @@
       "country": "Philippines",
       "languageGroup": "English",
       "audioType": "Simulated Conversations",
-      "domainContent": "Call center; diverse domains",
+      "domainContent": [
+        "Call center",
+        "diverse domains"
+      ],
       "volume": "60",
       "unitType": "hours",
       "channel": "Mono",
@@ -10899,7 +11382,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world medical dictation audio",
-      "domainContent": "Healthcare",
+      "domainContent": [
+        "Healthcare"
+      ],
       "volume": "1300",
       "unitType": "hours",
       "channel": "Mono",
@@ -10925,7 +11410,9 @@
       "country": "Vietnam",
       "languageGroup": "Vietnamese",
       "audioType": "Real world doctor patient conversation",
-      "domainContent": "Healthcare",
+      "domainContent": [
+        "Healthcare"
+      ],
       "volume": "2000",
       "unitType": "hours",
       "channel": "Mono",
@@ -10951,7 +11438,9 @@
       "country": "",
       "languageGroup": "English",
       "audioType": "Real world medical dictation audio",
-      "domainContent": "Healthcare / Clinical Documentation",
+      "domainContent": [
+        "Healthcare / Clinical Documentation"
+      ],
       "volume": "1500",
       "unitType": "hours",
       "channel": "",
@@ -10979,7 +11468,9 @@
       "country": "",
       "languageGroup": "English",
       "audioType": "Real world doctor patient conversation",
-      "domainContent": "Healthcare",
+      "domainContent": [
+        "Healthcare"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -11005,7 +11496,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Covid test kit",
+      "domainContent": [
+        "Covid test kit"
+      ],
       "volume": "1600",
       "unitType": "hours",
       "channel": "Mono",
@@ -11031,7 +11524,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Telecom",
+      "domainContent": [
+        "Telecom"
+      ],
       "volume": "8000",
       "unitType": "hours",
       "channel": "Mono",
@@ -11057,7 +11552,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Student Loan",
+      "domainContent": [
+        "Student Loan"
+      ],
       "volume": "206",
       "unitType": "hours",
       "channel": "Mono",
@@ -11083,7 +11580,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Medical / CS Appt",
+      "domainContent": [
+        "Medical / CS Appt"
+      ],
       "volume": "15000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -11109,7 +11608,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Medical Equipment",
+      "domainContent": [
+        "Medical Equipment"
+      ],
       "volume": "2000",
       "unitType": "hours",
       "channel": "Mono",
@@ -11135,7 +11636,10 @@
       "country": "Philippines",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Masstort / Medicare; Medical Insurance/ Pharmacy",
+      "domainContent": [
+        "Masstort / Medicare",
+        "Medical Insurance/ Pharmacy"
+      ],
       "volume": "10000",
       "unitType": "hours",
       "channel": "Both",
@@ -11161,7 +11665,9 @@
       "country": "Philippines",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Insurance",
+      "domainContent": [
+        "Insurance"
+      ],
       "volume": "148",
       "unitType": "hours",
       "channel": "Mono",
@@ -11187,7 +11693,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Home Service",
+      "domainContent": [
+        "Home Service"
+      ],
       "volume": "3000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -11213,7 +11721,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Final Expense",
+      "domainContent": [
+        "Final Expense"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -11239,7 +11749,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Automotive",
+      "domainContent": [
+        "Automotive"
+      ],
       "volume": "30000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -11265,7 +11777,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Airline",
+      "domainContent": [
+        "Airline"
+      ],
       "volume": "2154",
       "unitType": "hours",
       "channel": "Stereo",
@@ -11291,7 +11805,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Taxi",
+      "domainContent": [
+        "Taxi"
+      ],
       "volume": "5000",
       "unitType": "hours",
       "channel": "Mono",
@@ -11317,7 +11833,9 @@
       "country": "India",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Diabetic",
+      "domainContent": [
+        "Diabetic"
+      ],
       "volume": "2000",
       "unitType": "hours",
       "channel": "Mono",
@@ -11343,7 +11861,9 @@
       "country": "United States",
       "languageGroup": "English",
       "audioType": "Real world call center audio",
-      "domainContent": "Transport Services",
+      "domainContent": [
+        "Transport Services"
+      ],
       "volume": "300",
       "unitType": "hours",
       "channel": "Both",
@@ -11369,7 +11889,9 @@
       "country": "India",
       "languageGroup": "Bengali",
       "audioType": "Real world call center audio",
-      "domainContent": "Ecommerce",
+      "domainContent": [
+        "Ecommerce"
+      ],
       "volume": "1000",
       "unitType": "hours",
       "channel": "Stereo",
@@ -15285,7 +15807,9 @@
       "featured": false,
       "datasetId": "IMG_SDJ_CN",
       "category": "Image recognition",
-      "domain": "Home / Pet Care",
+      "domain": [
+        "Home / Pet Care"
+      ],
       "recordingDevice": "Roomba camera",
       "recordingCondition": "",
       "resolutionPixelDimensions": [],
@@ -15311,7 +15835,9 @@
       "featured": false,
       "datasetId": "IMG_VID_GARMENTS_US",
       "category": "Image recognition",
-      "domain": "Fashion / Garments",
+      "domain": [
+        "Fashion / Garments"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15340,7 +15866,9 @@
       "featured": false,
       "datasetId": "IMG_OCR_USE_RECEIPTS",
       "category": "OCR",
-      "domain": "Retail Documents / OCR",
+      "domain": [
+        "Retail Documents / OCR"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15367,7 +15895,9 @@
       "featured": false,
       "datasetId": "VID_OBJECT_US",
       "category": "Movement recognition",
-      "domain": "Everyday Objects",
+      "domain": [
+        "Everyday Objects"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15394,7 +15924,9 @@
       "featured": true,
       "datasetId": "HUMAN_BODY_VID003",
       "category": "Human Body Movement",
-      "domain": "Human Gestures",
+      "domain": [
+        "Human Gestures"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15421,7 +15953,9 @@
       "featured": false,
       "datasetId": "IMG_OCR_USE_STREET002",
       "category": "OCR",
-      "domain": "Signage / OCR",
+      "domain": [
+        "Signage / OCR"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15448,7 +15982,9 @@
       "featured": false,
       "datasetId": "IMG_SYMBOLS_US",
       "category": "OCR",
-      "domain": "Signage / Symbols",
+      "domain": [
+        "Signage / Symbols"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15474,7 +16010,9 @@
       "featured": true,
       "datasetId": "IMG_OCR_USE_PRODUCTLABELS",
       "category": "Image recognition",
-      "domain": "Product Packaging / Retail",
+      "domain": [
+        "Product Packaging / Retail"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15507,7 +16045,9 @@
       "featured": true,
       "datasetId": "VID_ACTION_US",
       "category": "Human Body Movement",
-      "domain": "Human & Animal Actions/Activities",
+      "domain": [
+        "Human & Animal Actions/Activities"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15537,7 +16077,9 @@
       "featured": true,
       "datasetId": "IMG_VID_SELFIE_US",
       "category": "Human Face",
-      "domain": "Facial Expressions / Selfies",
+      "domain": [
+        "Facial Expressions / Selfies"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15570,7 +16112,9 @@
       "featured": false,
       "datasetId": "IMG_BAKE_CN",
       "category": "Image recognition",
-      "domain": "Food / Baked Goods",
+      "domain": [
+        "Food / Baked Goods"
+      ],
       "recordingDevice": "",
       "recordingCondition": "",
       "resolutionPixelDimensions": [
@@ -15598,7 +16142,9 @@
       "featured": false,
       "datasetId": "IMG_DDC_CN",
       "category": "Image recognition",
-      "domain": "Automotive (electric vehicles, elevator scenes)",
+      "domain": [
+        "Automotive (electric vehicles, elevator scenes)"
+      ],
       "recordingDevice": "Surveillance camera",
       "recordingCondition": "",
       "resolutionPixelDimensions": [
@@ -15627,7 +16173,9 @@
       "featured": false,
       "datasetId": "IMG_HOME_CN",
       "category": "Image recognition",
-      "domain": "Home Interiors",
+      "domain": [
+        "Home Interiors"
+      ],
       "recordingDevice": "",
       "recordingCondition": "",
       "resolutionPixelDimensions": [
@@ -15655,7 +16203,9 @@
       "featured": false,
       "datasetId": "IMG_WD_CN",
       "category": "Image recognition",
-      "domain": "Automotive / License Plates",
+      "domain": [
+        "Automotive / License Plates"
+      ],
       "recordingDevice": "Mobile phone",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15685,7 +16235,9 @@
       "featured": false,
       "datasetId": "IMG_OCR_ARU002_CN",
       "category": "Document OCR",
-      "domain": "Signage / OCR (slogans, advertisements, maps, store names, menus, packaging)",
+      "domain": [
+        "Signage / OCR (slogans, advertisements, maps, store names, menus, packaging)"
+      ],
       "recordingDevice": "Mobile phone",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [],
@@ -15712,7 +16264,9 @@
       "featured": false,
       "datasetId": "HUMAN_BODY_VID002",
       "category": "Human Body Movement",
-      "domain": "Human Movement / Crowd Behaviour",
+      "domain": [
+        "Human Movement / Crowd Behaviour"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed background and lighting conditions",
       "resolutionPixelDimensions": [
@@ -15740,7 +16294,9 @@
       "featured": false,
       "datasetId": "IMG_OCR_USE_STREET001",
       "category": "OCR",
-      "domain": "Signage / OCR",
+      "domain": [
+        "Signage / OCR"
+      ],
       "recordingDevice": "Camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15770,7 +16326,9 @@
       "featured": false,
       "datasetId": "LICENSE_ANNO",
       "category": "Image and Video Bounding Box Annotations",
-      "domain": "Automotive / License Plates",
+      "domain": [
+        "Automotive / License Plates"
+      ],
       "recordingDevice": "",
       "recordingCondition": "",
       "resolutionPixelDimensions": [],
@@ -15797,7 +16355,9 @@
       "featured": false,
       "datasetId": "IMG_OCR_Handwritten",
       "category": "Document OCR",
-      "domain": "Handwriting / OCR",
+      "domain": [
+        "Handwriting / OCR"
+      ],
       "recordingDevice": "Camera, scan",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15826,7 +16386,9 @@
       "featured": false,
       "datasetId": "IMG_OCR_B2B",
       "category": "Document OCR",
-      "domain": "Business Documents / OCR",
+      "domain": [
+        "Business Documents / OCR"
+      ],
       "recordingDevice": "Camera, scan",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
@@ -15857,7 +16419,39 @@
       "featured": false,
       "datasetId": "IMG_TAG_CN",
       "category": "Image recognition",
-      "domain": "Airport; Beach; Car; Clothing store; Crowd; Department store; Desert; Electrical equipment; Gym; Handbag; KTV; Market; Mountain area; Museum; Night view; Office; Pet; Playground; Restaurant; Sandbeach; Scenic spot; Sea; Ship; Sky; Snow Mountain; Snow scene; Sports equipment; Store; Tree; Window scenery; Zoo",
+      "domain": [
+        "Airport",
+        "Beach",
+        "Car",
+        "Clothing store",
+        "Crowd",
+        "Department store",
+        "Desert",
+        "Electrical equipment",
+        "Gym",
+        "Handbag",
+        "KTV",
+        "Market",
+        "Mountain area",
+        "Museum",
+        "Night view",
+        "Office",
+        "Pet",
+        "Playground",
+        "Restaurant",
+        "Sandbeach",
+        "Scenic spot",
+        "Sea",
+        "Ship",
+        "Sky",
+        "Snow Mountain",
+        "Snow scene",
+        "Sports equipment",
+        "Store",
+        "Tree",
+        "Window scenery",
+        "Zoo"
+      ],
       "recordingDevice": "Mobile phone and camera",
       "recordingCondition": "Mixed lighting conditions",
       "resolutionPixelDimensions": [
