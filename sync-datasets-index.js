@@ -119,7 +119,7 @@ const FIELDS = {
     country: { key: "country", multi: false },
     "language-group": { key: "languageGroup", multi: false },
     "audio-type": { key: "audioType", multi: false },
-    "domain-content": { key: "domainContent", multi: false },
+    "domain-content": { key: "domainContent", multi: true },
     volume: { key: "volume", multi: false },
     "unit-type": { key: "unitType", multi: false },
     channel: { key: "channel", multi: false },
@@ -157,7 +157,7 @@ const FIELDS = {
   },
   "image-video-sets": {
     category: { key: "category", multi: false },
-    domain: { key: "domain", multi: false },
+    domain: { key: "domain", multi: true },
     "recording-device": { key: "recordingDevice", multi: false },
     "recording-condition": { key: "recordingCondition", multi: false },
     "resolution-pixel-dimensions": { key: "resolutionPixelDimensions", multi: true },
