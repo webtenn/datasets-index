@@ -47,18 +47,17 @@ const COLLECTION_IDS = {
   "other-sets": "6a998544fd732217e6612308",
 };
 
-// No single-dataset Collection Page template exists yet for any of the 8
-// collections (see CLAUDE.md) — this URL is a forward-compatible placeholder
-// so `url` is ready to use the day a template exists, not a live link today.
+// All 8 single-dataset Collection Page templates are live (see CLAUDE.md in
+// the "Webflow OTS Datasets" project) at /data-catalog/{collection-key}/{slug}.
 const COLLECTION_URL_PREFIX = {
-  "tasks-verifiers": "/datasets/tasks-verifiers",
-  "code-repos": "/datasets/code-repos",
-  "book-corpora": "/datasets/book-corpora",
-  "audio-catalogue": "/datasets/audio-catalogue",
-  "pronunciation-dictionaries": "/datasets/pronunciation-dictionaries",
-  "enterprise-company-data": "/datasets/enterprise-company-data",
-  "image-video-sets": "/datasets/image-video-sets",
-  "other-sets": "/datasets/other-sets",
+  "tasks-verifiers": "/data-catalog/tasks-verifiers",
+  "code-repos": "/data-catalog/code-repos",
+  "book-corpora": "/data-catalog/book-corpora",
+  "audio-catalogue": "/data-catalog/audio-catalogue",
+  "pronunciation-dictionaries": "/data-catalog/pronunciation-dictionaries",
+  "enterprise-company-data": "/data-catalog/enterprise-company-data",
+  "image-video-sets": "/data-catalog/image-video-sets",
+  "other-sets": "/data-catalog/other-sets",
 };
 
 // Per-collection field maps: Webflow field slug -> { key: json key, multi }.
