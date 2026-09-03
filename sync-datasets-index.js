@@ -1,14 +1,24 @@
 /**
  * Webflow Datasets Index Sync Script
  *
- * Fetches all published items from the Datasets CMS collection(s) and writes
- * a unified datasets-index.json file to the repo, used to power the custom
- * JS filtering on the Full Data Catalog page's tabs.
+ * Fetches all published items from the 8 Webflow OTS Dataset CMS collections
+ * (Tasks & Verifiers, Code Repos, Book Corpora, Audio Catalog, Pronunciation
+ * & POS Dictionaries, Enterprise Company Data, Image & Video, Other) and
+ * writes a unified datasets-index.json file to the repo, used to power the
+ * custom JS tab filtering on the Full Data Catalog page.
  *
- * Unlike search-index-sync.js, there are no multi-reference fields to
- * resolve here — Product Type, Common Use Cases, Year of Collection, and
- * Sample Rate are semicolon-delimited plain text fields, so they're just
- * split into arrays.
+ * Replaces the original single-collection version (the old "Datasets"
+ * pilot collection, 6a903ca68436a42fcd4b8842) now that the full catalog has
+ * been split into 8 category-specific collections with genuinely different
+ * schemas. That old collection is still live but is being phased out — see
+ * the OTS Datasets project's CLAUDE.md.
+ *
+ * No reference-field resolution needed — every multi-value field on these
+ * collections is a "; "-delimited plain Text field (no multi-reference, by
+ * design), so multi-value fields are just split into arrays. Which fields
+ * are multi-value differs per collection (see FIELDS below) — it mirrors
+ * exactly which columns got `standardize_multivalue()` applied in the
+ * Python cleaning script (xlsx_clean.py) for that tab.
  *
  * Required environment variables:
  *   WEBFLOW_API_TOKEN  — Site API token (CMS read)
@@ -24,28 +34,158 @@ const API_TOKEN = process.env.WEBFLOW_API_TOKEN;
 const SITE_ID = process.env.WEBFLOW_SITE_ID;
 const BASE_URL = "https://api.webflow.com/v2";
 
-// One collection today ("Datasets", working name "Test"). Each future tab
-// (Tasks & Verifiers, Code Repos, Book Corpuses, Audio Catalog, Enterprise
-// Company Data, Other Sets) gets its own entry here once it exists — they
-// don't share a schema, so field handling per collection may need to differ.
+// Collection IDs from collections_config.py (the Python single source of
+// truth for these). Update here too if a collection is ever recreated.
 const COLLECTION_IDS = {
-  datasets: "6a903ca68436a42fcd4b8842",
+  "tasks-verifiers": "6a99832ffd732217e660cb32",
+  "code-repos": "6a99853e38e229b39cdc3912",
+  "book-corpora": "6a99853f17956efcbddbb342",
+  "audio-catalogue": "6a99854057206d63ef24ced9",
+  "pronunciation-dictionaries": "6a998540c8ebe72e2d9db074",
+  "enterprise-company-data": "6a998541040b22801498a16e",
+  "image-video-sets": "6a99854273f796e2592576b7",
+  "other-sets": "6a998544fd732217e6612308",
 };
 
-// URL prefix for each collection — maps to the Webflow Collection Page URL pattern
+// No single-dataset Collection Page template exists yet for any of the 8
+// collections (see CLAUDE.md) — this URL is a forward-compatible placeholder
+// so `url` is ready to use the day a template exists, not a live link today.
 const COLLECTION_URL_PREFIX = {
-  datasets: "/datasets",
+  "tasks-verifiers": "/datasets/tasks-verifiers",
+  "code-repos": "/datasets/code-repos",
+  "book-corpora": "/datasets/book-corpora",
+  "audio-catalogue": "/datasets/audio-catalogue",
+  "pronunciation-dictionaries": "/datasets/pronunciation-dictionaries",
+  "enterprise-company-data": "/datasets/enterprise-company-data",
+  "image-video-sets": "/datasets/image-video-sets",
+  "other-sets": "/datasets/other-sets",
 };
 
-// Fields that are "; "-delimited plain text and should be split into arrays
-// for the front-end JS filter to consume (see CLAUDE.md: no multi-reference
-// fields on this collection, by design).
-const SEMICOLON_FIELDS = [
-  "product-type-2",
-  "common-use-cases-3",
-  "year-of-collection-2",
-  "sample-rate-khz",
-];
+// Per-collection field maps: Webflow field slug -> { key: json key, multi }.
+// `multi: true` means the field is "; "-delimited and gets split into an
+// array. This list is the JS mirror of collections_config.py's field_map,
+// with the multi/single split taken directly from which columns
+// xlsx_clean.py ran through standardize_multivalue() for that tab — not
+// guessed from the slug name (a couple of "(s)"-named fields, e.g. Other
+// Sets' "Domain / Subject Area", are actually single-value; see CLAUDE.md).
+const FIELDS = {
+  "tasks-verifiers": {
+    "language-s": { key: "languages", multi: false },
+    description: { key: "description", multi: false },
+    category: { key: "category", multi: false },
+    "domain-subject-area": { key: "domainSubjectArea", multi: true },
+    "data-coverage-period": { key: "dataCoveragePeriod", multi: false },
+    "qty-available": { key: "qtyAvailable", multi: false },
+    "source-annotation": { key: "sourceAnnotation", multi: false },
+    "known-limitations": { key: "knownLimitations", multi: false },
+    "license-type": { key: "licenseType", multi: false },
+    "refresh-cadence": { key: "refreshCadence", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
+  },
+  "code-repos": {
+    category: { key: "category", multi: false },
+    industry: { key: "industry", multi: false },
+    description: { key: "description", multi: false },
+    "years-in-business": { key: "yearsInBusiness", multi: false },
+    established: { key: "established", multi: false },
+    closed: { key: "closed", multi: false },
+    employees: { key: "employees", multi: false },
+    contributors: { key: "contributors", multi: false },
+    "engineer-quality": { key: "engineerQuality", multi: false },
+    "development-type": { key: "developmentType", multi: false },
+    "primary-language-s": { key: "primaryLanguages", multi: true },
+    "total-loc": { key: "totalLoc", multi: false },
+    repos: { key: "repos", multi: false },
+    prs: { key: "prs", multi: false },
+    "avg-loc-pr": { key: "avgLocPerPr", multi: false },
+    commits: { key: "commits", multi: false },
+    "test-coverage": { key: "testCoverage", multi: false },
+    "code-availability": { key: "codeAvailability", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
+  },
+  "book-corpora": {
+    language: { key: "language", multi: false },
+    "product-type": { key: "productType", multi: false },
+    domains: { key: "domains", multi: true },
+    "data-format": { key: "dataFormat", multi: true },
+    volume: { key: "volume", multi: false },
+    "unit-type": { key: "unitType", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    source: { key: "source", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
+  },
+  "audio-catalogue": {
+    locale: { key: "locale", multi: true },
+    country: { key: "country", multi: false },
+    "language-group": { key: "languageGroup", multi: false },
+    "audio-type": { key: "audioType", multi: false },
+    "domain-content": { key: "domainContent", multi: false },
+    volume: { key: "volume", multi: false },
+    "unit-type": { key: "unitType", multi: false },
+    channel: { key: "channel", multi: false },
+    "sample-rate-khz": { key: "sampleRateKhz", multi: true },
+    "data-format": { key: "dataFormat", multi: false },
+    "recording-device": { key: "recordingDevice", multi: false },
+    "recording-condition": { key: "recordingCondition", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    source: { key: "source", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: true },
+  },
+  "pronunciation-dictionaries": {
+    locale: { key: "locale", multi: true },
+    country: { key: "country", multi: false },
+    "language-group": { key: "languageGroup", multi: false },
+    category: { key: "category", multi: false },
+    volume: { key: "volume", multi: false },
+    "unit-type": { key: "unitType", multi: false },
+    "data-format": { key: "dataFormat", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    source: { key: "source", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
+  },
+  "enterprise-company-data": {
+    industry: { key: "industry", multi: false },
+    "code-base-available": { key: "codeBaseAvailable", multi: false },
+    "business-description": { key: "businessDescription", multi: false },
+    "operating-period": { key: "operatingPeriod", multi: false },
+    "peak-headcount": { key: "peakHeadcount", multi: false },
+    headquarters: { key: "headquarters", multi: false },
+    "employee-locations": { key: "employeeLocations", multi: false },
+    "operating-model": { key: "operatingModel", multi: false },
+    "platforms-tools": { key: "platformsTools", multi: true },
+    "data-volume-details": { key: "dataVolumeDetails", multi: false },
+  },
+  "image-video-sets": {
+    category: { key: "category", multi: false },
+    domain: { key: "domain", multi: false },
+    "recording-device": { key: "recordingDevice", multi: false },
+    "recording-condition": { key: "recordingCondition", multi: false },
+    "resolution-pixel-dimensions": { key: "resolutionPixelDimensions", multi: true },
+    volume: { key: "volume", multi: false },
+    "unit-type": { key: "unitType", multi: false },
+    "generation-source": { key: "generationSource", multi: false },
+    annotation: { key: "annotation", multi: true },
+    "data-format": { key: "dataFormat", multi: true },
+    source: { key: "source", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
+  },
+  "other-sets": {
+    "language-s": { key: "languages", multi: true },
+    category: { key: "category", multi: false },
+    "domain-subject-area": { key: "domainSubjectArea", multi: false },
+    "data-coverage-period": { key: "dataCoveragePeriod", multi: true },
+    "qty-available": { key: "qtyAvailable", multi: false },
+    "generation-source": { key: "generationSource", multi: false },
+    annotation: { key: "annotation", multi: false },
+    "license-type": { key: "licenseType", multi: false },
+    "data-format": { key: "dataFormat", multi: true },
+    "refresh-cadence": { key: "refreshCadence", multi: false },
+    source: { key: "source", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: true },
+  },
+};
 
 const OUTPUT_PATH = path.join(__dirname, "datasets-index.json");
 
@@ -109,6 +249,8 @@ async function main() {
     const items = await fetchAllItems(collectionId);
     console.log(`  ✓ ${items.length} items found`);
 
+    const fieldMap = FIELDS[collectionKey];
+
     for (const item of items) {
       const f = item.fieldData || {};
 
@@ -120,26 +262,11 @@ async function main() {
         url: `${COLLECTION_URL_PREFIX[collectionKey]}/${f["slug"] || ""}`,
         featured: !!f["featured"],
         datasetId: f["dataset-id"] || "",
-        language: f["language-3"] || "",
-        country: f["country-2"] || "",
-        languageCode: f["language-code"] || "",
-        countryCode: f["country-code"] || "",
-        productType: splitSemicolon(f["product-type-2"]),
-        detailedProductType: f["detailed-product-type"] || "",
-        commonUseCases: splitSemicolon(f["common-use-cases-3"]),
-        unit: f["unit"] || "",
-        recordingDevice: f["recording-device"] || "",
-        recordingCondition: f["recording-condition"] || "",
-        contributors: f["contributors"] || "",
-        utterances: f["utterances"] || "",
-        uniqueWords: f["unique-words"] || "",
-        sampleRateKhz: splitSemicolon(f["sample-rate-khz"]),
-        channels: f["channels"] || "",
-        dataFormat: f["data-format"] || "",
-        source: f["source"] || "",
-        additionalInformation: f["additional-information"] || "",
-        yearOfCollection: splitSemicolon(f["year-of-collection-2"]),
       };
+
+      for (const [wfSlug, { key, multi }] of Object.entries(fieldMap)) {
+        record[key] = multi ? splitSemicolon(f[wfSlug]) : (f[wfSlug] || "");
+      }
 
       allItems.push(record);
     }
