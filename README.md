@@ -88,6 +88,35 @@ There's no webhook yet, so item edits published in Webflow won't show up in
 
 ---
 
+## Quote Cart Module
+
+`quote-cart.js` is unrelated to the sync job above — it's a standalone,
+self-initializing "Add to Quote" cart (data layer + tray + modal + toast +
+HubSpot form wiring) shared by the OTS Datasets project's Full Data Catalog
+page and all 8 single-item detail templates. It lives here (rather than in
+that project's own repo) for the same reason `datasets-index.json` does:
+Webflow Custom Code Embeds cap out at 50,000 characters, so this ~23KB module
+is hosted here and pulled in with one `<script src>` tag instead of being
+pasted into all 9 embeds. See the "Request a Quote cart" section of the OTS
+Datasets project's `CLAUDE.md` for the full history and design decisions.
+
+Referenced via jsdelivr's GitHub-mirror CDN, not raw.githubusercontent.com
+(more reliable `Content-Type` for serving actual JavaScript):
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/webtenn/datasets-index@main/quote-cart.js"></script>
+```
+
+This script must load *before* each page's own embed script (plain
+`<script src>` tags execute in document order, so placing this one first in
+the HTML is enough — no `async`/`defer`). It self-initializes and exposes
+exactly four globals those page scripts call into: `window.AppenQuoteCart`,
+`window.showToast`, `window.AQ_CHECK_ICON`, `window.openQuoteModal`.
+Everything else in the file is intentionally private to its own IIFE.
+
+Unlike `datasets-index.json`, this file is edited and pushed by hand — there's
+no automated build step for it.
+
 ## Output Format
 
 Every item carries the same base fields (`id`, `collection`, `title`, `slug`,
@@ -106,7 +135,7 @@ comes back as an array; everything else is a plain string.
       "collection": "audio-catalogue",
       "title": "English (United States) conversational smartphone",
       "slug": "use-asr008",
-      "url": "/datasets/audio-catalogue/use-asr008",
+      "url": "/data-catalog/audio-catalogue/use-asr008",
       "featured": true,
       "datasetId": "USE_ASR008",
       "locale": ["en-US"],
