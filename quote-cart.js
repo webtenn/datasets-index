@@ -49,17 +49,21 @@
     gap: 9px;
     height: 44px;
     padding: 0 16px 0 14px;
-    background: #121212;
+    /* Terracotta, not near-black -- this pill is meant to sit over
+       whatever's on the page, including a black site footer (same
+       #121212 as the old background), which made it nearly disappear.
+       Terracotta reads clearly against both black and the cream page. */
+    background: #95654b;
     color: #fff;
     border: none;
     border-radius: 100px;
-    box-shadow: 0 6px 20px rgba(18,18,18,0.22);
+    box-shadow: 0 6px 20px rgba(18,18,18,0.28);
     cursor: pointer;
     font-family: inherit;
     transition: background 0.15s, transform 0.15s;
   }
-  #aq-cart .aq-pill:hover { background: #2a2a2a; }
-  #aq-cart .aq-pill:focus-visible { outline: 2px solid #95654b; outline-offset: 2px; }
+  #aq-cart .aq-pill:hover { background: #7d5240; }
+  #aq-cart .aq-pill:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
   #aq-cart.aq-just-added .aq-pill { animation: aq-pop 0.3s ease; }
   @keyframes aq-pop { 0% { transform: scale(1); } 45% { transform: scale(1.08); } 100% { transform: scale(1); } }
 
@@ -67,7 +71,7 @@
     font-family: 'DM Mono', 'SF Mono', Consolas, monospace;
     font-size: 12px;
     font-weight: 500;
-    background: #95654b;
+    background: #121212;
     color: #fff;
     min-width: 20px;
     height: 20px;
@@ -325,6 +329,12 @@
     align-items: center;
     gap: 8px;
     background: #121212;
+    /* Same #121212 as a black site footer could sit behind this --
+       unlike the pill (always on screen, recolored to terracotta), the
+       toast is only ever visible for 2.2s, so a defining light border
+       is enough rather than a full recolor (which would fight the
+       green check icon's own contrast). */
+    border: 1.5px solid rgba(255,255,255,0.32);
     color: #fff;
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 13px;
