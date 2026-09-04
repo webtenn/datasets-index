@@ -125,6 +125,31 @@
     color: #121212;
   }
 
+  #aq-cart .aq-panel-minimize {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #6e6e6e;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  #aq-cart .aq-panel-minimize:hover { color: #121212; background: #f2f2f0; }
+  #aq-cart .aq-panel-minimize:focus-visible { outline: 2px solid #95654b; outline-offset: 1px; }
+
+  /* Sits below the header's divider, not beside the title -- so it can no
+     longer be mis-clicked while reaching for the minimize button above it. */
+  #aq-cart .aq-panel-subrow {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 16px 2px;
+    flex-shrink: 0;
+  }
+
   #aq-cart .aq-panel-clear {
     font-size: 11.5px;
     font-weight: 500;
@@ -418,7 +443,12 @@
     cartEl.id = 'aq-cart';
     cartEl.innerHTML =
       '<div class="aq-panel">' +
-        '<div class="aq-panel-head"><span class="aq-panel-title">Quote request</span><button type="button" class="aq-panel-clear" id="aq-clear">Clear all</button></div>' +
+        '<div class="aq-panel-head"><span class="aq-panel-title">Quote request</span>' +
+          '<button type="button" class="aq-panel-minimize" id="aq-minimize" aria-label="Minimize quote panel" title="Minimize">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
+          '</button>' +
+        '</div>' +
+        '<div class="aq-panel-subrow"><button type="button" class="aq-panel-clear" id="aq-clear">Clear all</button></div>' +
         '<div class="aq-list" id="aq-list"></div>' +
         '<div class="aq-panel-foot"><button type="button" class="aq-btn-request" id="aq-request">Request quote</button></div>' +
       '</div>' +
@@ -455,6 +485,11 @@
       var open = !cartEl.classList.contains('aq-open');
       cartEl.classList.toggle('aq-open', open);
       this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    document.getElementById('aq-minimize').addEventListener('click', function () {
+      cartEl.classList.remove('aq-open');
+      document.getElementById('aq-pill').setAttribute('aria-expanded', 'false');
     });
 
     document.getElementById('aq-clear').addEventListener('click', function () { AppenQuoteCart.clear(); });
