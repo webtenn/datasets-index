@@ -1,0 +1,532 @@
+/* Full Data Catalog page styles -- www.appen.com/data-catalog
+   Extracted from data-catalog-embed.html 2026-09-10 to get the embed back under
+   Webflow's 50,000-char limit. Loaded as a <link> from the page's head custom code,
+   NOT injected by JS, so there is no flash of unstyled content.
+   Every rule is scoped to #appen-catalog, so it cannot leak into the Webflow page.
+   CACHING: jsdelivr sends max-age=604800 (7d BROWSER) -- a purge clears the edge but
+   NOT a returning visitor's browser. Bump the ?v= in the <link> on every change.
+   See CLAUDE.md, 'Full Data Catalog page'. */
+
+  #appen-catalog {
+    --dc-font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --dc-font-mono: 'DM Mono', 'SF Mono', Consolas, monospace;
+    --dc-bg-canvas: #f9f9f7;
+    --dc-bg-surface: #ffffff;
+    --dc-bg-muted: #f2f2f0;
+    --dc-border: #e2e2de;
+    --dc-text: #121212;
+    --dc-text-secondary: #595959;
+    --dc-text-muted: #6e6e6e;
+    --dc-accent: #95654b;
+    --dc-accent-bg: #f7f0ec;
+    --dc-success: #2f7d54;
+    --dc-success-bg: #e5f2e9;
+    --dc-radius-sm: 6px;
+    --dc-radius-md: 10px;
+    --dc-radius-lg: 16px;
+    --dc-shadow-sm: 0 2px 8px rgba(18,18,18,0.04);
+  }
+
+  #appen-catalog, #appen-catalog * { box-sizing: border-box; }
+
+  #appen-catalog {
+    font-family: var(--dc-font);
+    background: var(--dc-bg-canvas);
+    color: var(--dc-text);
+    padding: 56px 0 96px;
+  }
+
+  #appen-catalog .dc-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    #appen-catalog { padding: 36px 0 64px; }
+  }
+
+  /* Tabs */
+  #appen-catalog .dc-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+    border-bottom: 1px solid var(--dc-border);
+    margin-bottom: 32px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  #appen-catalog .dc-tabs::-webkit-scrollbar { display: none; }
+
+  #appen-catalog .dc-tab {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: var(--dc-font);
+    padding: 0 16px 14px;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--dc-text-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  #appen-catalog .dc-tab-num {
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    color: var(--dc-text-muted);
+  }
+
+  #appen-catalog .dc-tab.active {
+    color: var(--dc-text);
+    border-bottom-color: var(--dc-accent);
+  }
+
+  #appen-catalog .dc-tab.active .dc-tab-num { color: var(--dc-accent); }
+
+  #appen-catalog .dc-tab:not(.active):hover { color: var(--dc-text); }
+
+  /* Panel intro */
+  #appen-catalog .dc-panel-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+
+  #appen-catalog .dc-panel-count {
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    color: var(--dc-text-muted);
+  }
+
+  #appen-catalog .dc-panel-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  #appen-catalog .dc-panel-desc {
+    font-size: 14px;
+    color: var(--dc-text-secondary);
+    max-width: 640px;
+    margin: 6px 0 28px;
+    line-height: 1.6;
+  }
+
+  /* Filter bar */
+  #appen-catalog .dc-filterbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+    background: var(--dc-bg-surface);
+    border: 1px solid var(--dc-border);
+    border-radius: var(--dc-radius-md);
+    padding: 18px 20px;
+    margin-bottom: 20px;
+  }
+
+  #appen-catalog .dc-filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 168px;
+    flex: 1 1 168px;
+  }
+
+  /* Solo filter (only field in the bar): keep it tidy, not stretched full-width */
+  #appen-catalog .dc-filter-field.dc-filter-field-solo {
+    flex: 0 1 240px;
+    min-width: 200px;
+  }
+
+  #appen-catalog .dc-filter-label {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dc-text-muted);
+  }
+
+  #appen-catalog .dc-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--dc-bg-surface) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>") no-repeat right 12px center;
+    background-size: 13px;
+    border: 1.5px solid var(--dc-border);
+    border-radius: var(--dc-radius-sm);
+    padding: 9px 32px 9px 12px;
+    font-family: var(--dc-font);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dc-text);
+    cursor: pointer;
+    height: 38px;
+    transition: border-color 0.15s;
+  }
+
+  #appen-catalog .dc-select:hover { border-color: #c7c7c1; }
+  #appen-catalog .dc-select:focus-visible { outline: 2px solid var(--dc-accent); outline-offset: 1px; border-color: var(--dc-accent); }
+
+  #appen-catalog .dc-clear-btn {
+    height: 38px;
+    padding: 0 16px;
+    background: none;
+    border: 1.5px solid var(--dc-border);
+    border-radius: var(--dc-radius-sm);
+    font-family: var(--dc-font);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dc-text-secondary);
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+
+  #appen-catalog .dc-clear-btn:hover { border-color: var(--dc-accent); color: var(--dc-accent); }
+  #appen-catalog .dc-clear-btn:focus-visible { outline: 2px solid var(--dc-accent); outline-offset: 1px; }
+
+  /* Results row */
+  #appen-catalog .dc-results-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: var(--dc-text-muted);
+  }
+
+  #appen-catalog .dc-results-row strong { color: var(--dc-text); font-weight: 600; }
+
+  /* Table */
+  #appen-catalog .dc-table-wrap {
+    background: var(--dc-bg-surface);
+    border: 1px solid var(--dc-border);
+    border-radius: var(--dc-radius-md);
+    overflow: hidden;
+    box-shadow: var(--dc-shadow-sm);
+  }
+
+  #appen-catalog .dc-table-scroll { overflow-x: auto; }
+
+  #appen-catalog table.dc-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 920px;
+  }
+
+  #appen-catalog .dc-table thead th {
+    text-align: left;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--dc-text-muted);
+    background: var(--dc-bg-muted);
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--dc-border);
+    white-space: nowrap;
+  }
+
+  #appen-catalog .dc-table th.dc-col-actions,
+  #appen-catalog .dc-table td.dc-col-actions { width: 62px; padding-left: 14px; padding-right: 0; }
+
+  #appen-catalog .dc-row-actions { display: flex; align-items: center; gap: 3px; }
+
+  #appen-catalog .dc-row {
+    border-bottom: 1px solid var(--dc-border);
+    transition: background 0.12s;
+    cursor: pointer;
+  }
+
+  #appen-catalog .dc-row:last-child { border-bottom: none; }
+  #appen-catalog .dc-row:hover { background: #fbfaf8; }
+  #appen-catalog .dc-row.expanded { background: #fbfaf8; }
+
+  #appen-catalog .dc-table td {
+    padding: 13px 14px;
+    font-size: 13.5px;
+    color: var(--dc-text);
+    vertical-align: top;
+  }
+
+  #appen-catalog .dc-icon-btn {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--dc-text-muted);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, color 0.15s, background 0.15s;
+  }
+
+  #appen-catalog .dc-icon-btn:focus-visible { outline: 2px solid var(--dc-accent); outline-offset: 1px; }
+
+  #appen-catalog .dc-row:hover .dc-expand-btn { color: var(--dc-accent); }
+  #appen-catalog .dc-expand-btn:hover { color: var(--dc-accent); background: var(--dc-accent-bg); }
+  #appen-catalog .dc-expand-btn svg { transition: transform 0.2s; }
+  #appen-catalog .dc-row.expanded .dc-expand-btn { color: var(--dc-accent); }
+  #appen-catalog .dc-row.expanded .dc-expand-btn svg { transform: rotate(45deg); }
+
+  #appen-catalog .dc-add-btn:hover { color: var(--dc-accent); background: var(--dc-accent-bg); }
+  #appen-catalog .dc-add-btn.added {
+    color: var(--dc-success);
+    background: var(--dc-success-bg);
+  }
+  #appen-catalog .dc-add-btn.added:hover { background: #d5e9dc; }
+  #appen-catalog .dc-add-btn.dc-just-added { animation: dc-pop 0.28s ease; }
+
+  @keyframes dc-pop {
+    0% { transform: scale(1); }
+    45% { transform: scale(1.28); }
+    100% { transform: scale(1); }
+  }
+
+  #appen-catalog .dc-name-cell { min-width: 220px; }
+
+  #appen-catalog .dc-name {
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.35;
+  }
+
+  #appen-catalog .dc-name-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #appen-catalog .dc-name-link:hover,
+  #appen-catalog .dc-name-link:focus-visible {
+    color: var(--dc-accent);
+    text-decoration: none;
+  }
+
+  #appen-catalog .dc-name-link:focus-visible {
+    outline: 2px solid var(--dc-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  #appen-catalog .dc-featured-star {
+    color: var(--dc-accent);
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  #appen-catalog .dc-id {
+    font-family: var(--dc-font-mono);
+    font-size: 10.5px;
+    color: var(--dc-text-muted);
+    margin-top: 3px;
+  }
+
+  #appen-catalog .dc-badges { display: flex; flex-wrap: wrap; gap: 5px; max-width: 260px; }
+
+  #appen-catalog .dc-hero-badges { margin-bottom: 20px; }
+  #appen-catalog .dc-hero-badges .dc-badges { max-width: none; }
+
+  #appen-catalog .dc-badge {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 100px;
+    background: var(--dc-bg-muted);
+    color: var(--dc-text-secondary);
+    white-space: nowrap;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* In the expanded detail panel there's room to show the full value --
+     only the compact table row needs to truncate a long single value. */
+  #appen-catalog .dc-hero-badges .dc-badge {
+    max-width: none;
+    white-space: normal;
+  }
+
+  #appen-catalog .dc-badge-more { background: none; color: var(--dc-text-muted); padding-left: 2px; }
+
+  #appen-catalog .dc-size { font-family: var(--dc-font-mono); font-size: 12.5px; white-space: nowrap; }
+
+  #appen-catalog .dc-muted-cell { color: var(--dc-text-secondary); }
+
+  /* Detail / spec-sheet row */
+  #appen-catalog .dc-detail-row { display: none; }
+  #appen-catalog .dc-detail-row.open { display: table-row; }
+
+  #appen-catalog .dc-detail-row td {
+    background: #fbfaf8;
+    padding: 0;
+    border-bottom: 1px solid var(--dc-border);
+  }
+
+  #appen-catalog .dc-detail-inner { padding: 22px 24px 26px 52px; }
+
+  #appen-catalog .dc-spec-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dc-text-muted);
+    margin-bottom: 12px;
+  }
+
+  #appen-catalog .dc-description {
+    font-size: 13.5px;
+    color: var(--dc-text-secondary);
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 0 20px;
+  }
+
+  #appen-catalog .dc-spec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px 20px;
+    margin-bottom: 18px;
+  }
+
+  #appen-catalog .dc-spec-item-label {
+    font-size: 10.5px;
+    color: var(--dc-text-muted);
+    margin-bottom: 4px;
+  }
+
+  #appen-catalog .dc-spec-item-value {
+    font-family: var(--dc-font-mono);
+    font-size: 13px;
+    color: var(--dc-text);
+    line-height: 1.4;
+  }
+
+  /* Redundant, labeled actions at the top of the expanded spec sheet --
+     the row's icon-only expand/add controls are easy to miss on first
+     use, so once someone has actually opened a dataset's detail, these
+     make "add to quote" and "talk to sales about this one" explicit. */
+  #appen-catalog .dc-detail-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  #appen-catalog .dc-detail-top-main { flex: 1 1 auto; min-width: 0; }
+  #appen-catalog .dc-detail-top-main .dc-description { margin: 0; }
+
+  #appen-catalog .dc-detail-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  #appen-catalog .dc-detail-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    padding: 0 14px;
+    border: 1.5px solid var(--dc-border);
+    border-radius: 100px;
+    background: var(--dc-bg-surface);
+    font-family: var(--dc-font);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dc-text-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+
+  #appen-catalog .dc-detail-action svg { flex-shrink: 0; }
+  #appen-catalog .dc-detail-action:hover { border-color: var(--dc-accent); color: var(--dc-accent); }
+  #appen-catalog .dc-detail-action:focus-visible { outline: 2px solid var(--dc-accent); outline-offset: 1px; }
+
+  #appen-catalog .dc-detail-action .dc-detail-action-label-on { display: none; }
+  #appen-catalog .dc-detail-action.added .dc-detail-action-label-off { display: none; }
+  #appen-catalog .dc-detail-action.added .dc-detail-action-label-on { display: inline; }
+  #appen-catalog .dc-detail-action.added { border-color: var(--dc-success); }
+
+  /* Empty / loading */
+  #appen-catalog .dc-empty, #appen-catalog .dc-loading {
+    padding: 72px 20px;
+    text-align: center;
+    color: var(--dc-text-muted);
+  }
+
+  #appen-catalog .dc-empty h3 { font-size: 16px; font-weight: 600; color: var(--dc-text); margin: 0 0 6px; }
+  #appen-catalog .dc-empty p, #appen-catalog .dc-loading p { font-size: 13.5px; margin: 0; }
+
+  #appen-catalog .dc-spinner {
+    width: 18px; height: 18px;
+    border: 2px solid var(--dc-border);
+    border-top-color: var(--dc-accent);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+    animation: dc-spin 0.7s linear infinite;
+  }
+
+  @keyframes dc-spin { to { transform: rotate(360deg); } }
+
+  /* Pagination */
+  #appen-catalog .dc-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  #appen-catalog .dc-page-btn {
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    border: 1.5px solid var(--dc-border);
+    border-radius: 7px;
+    background: var(--dc-bg-surface);
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dc-text);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #appen-catalog .dc-page-btn:hover:not(:disabled) { border-color: var(--dc-accent); color: var(--dc-accent); }
+  #appen-catalog .dc-page-btn.active { background: var(--dc-text); border-color: var(--dc-text); color: #fff; }
+  #appen-catalog .dc-page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  #appen-catalog .dc-page-ellipsis { padding: 0 2px; color: var(--dc-text-muted); font-size: 12px; }
+
+  @media (max-width: 640px) {
+    #appen-catalog .dc-filter-field,
+    #appen-catalog .dc-filter-field.dc-filter-field-solo { flex: 1 1 100%; }
+
+    /* Actions go above the description on narrow screens, and wrap
+       instead of forcing the panel wider than the viewport. */
+    #appen-catalog .dc-detail-top { flex-direction: column-reverse; align-items: stretch; gap: 14px; }
+    #appen-catalog .dc-detail-actions { flex-wrap: wrap; }
+  }
+
