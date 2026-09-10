@@ -165,7 +165,7 @@
   #appen-catalog .dc-search-input {
     width: 100%;
     font-family: var(--dc-font);
-    font-size: 14px;
+    font-size: 16px;
     color: var(--dc-text);
     background: var(--dc-bg-surface);
     border: 1px solid var(--dc-border);
