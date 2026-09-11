@@ -342,6 +342,33 @@
     margin: 0;
   }
 
+  /* Post-submit state -- the modal deliberately stays OPEN after the
+     HubSpot form is submitted so its own thank-you message (rendered
+     inside the form iframe, in place of the fields) is actually
+     readable. The cart chips and the "confirm the datasets below"
+     blurb are hidden at that point (the cart has just been cleared),
+     and this Done button becomes the obvious way out. */
+  #aq-modal-overlay .aq-hidden { display: none !important; }
+
+  #aq-modal-overlay .aq-modal-done {
+    display: none;
+    width: 100%;
+    height: 42px;
+    margin-top: 16px;
+    background: #121212;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  #aq-modal-overlay .aq-modal-done.aq-show { display: block; }
+  #aq-modal-overlay .aq-modal-done:hover { background: #95654b; }
+  #aq-modal-overlay .aq-modal-done:focus-visible { outline: 2px solid #95654b; outline-offset: 2px; }
+
   /* Toast -- brief confirmation on add/remove, since the quote tray
      itself (bottom-right) is easy to miss on first use. Bottom-center
      on purpose, clear of the tray pill. */
@@ -469,10 +496,11 @@
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>' +
           '</button>' +
         '</div>' +
-        '<div class="aq-modal-body">' +
+        '<div class="aq-modal-body" id="aq-modal-body-scroll">' +
           '<div class="aq-modal-cart-label" id="aq-modal-cart-label"></div>' +
           '<div class="aq-modal-chips" id="aq-modal-chips"></div>' +
           '<div class="aq-hubspot-slot" id="aq-hubspot-slot"></div>' +
+          '<button type="button" class="aq-modal-done" id="aq-modal-done">Done</button>' +
         '</div>' +
       '</div>';
     document.body.appendChild(modalEl);
@@ -500,6 +528,7 @@
     });
 
     document.getElementById('aq-modal-close').addEventListener('click', closeQuoteModal);
+    document.getElementById('aq-modal-done').addEventListener('click', closeQuoteModal);
     modalEl.addEventListener('click', function (e) { if (e.target === modalEl) closeQuoteModal(); });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && modalEl.classList.contains('aq-open')) closeQuoteModal();
@@ -574,12 +603,18 @@
   // form into #aq-hubspot-slot, and keeps the "quote_cart_items" hidden
   // field (Multi-line text, in HubSpot) in sync with the cart -- on
   // first render, and again on every cart change while the modal is
-  // open (e.g. removing a chip). Submitting the form clears the cart.
+  // open (e.g. removing a chip). Submitting the form clears the cart and
+  // leaves the modal open on HubSpot's own thank-you message.
   var HS_PORTAL_ID = '48152462';
   var HS_FORM_ID = '3d8a4044-3f16-4d0e-ad7d-8167e38dbfb8';
   var HS_REGION = 'na1';
   var HS_HIDDEN_FIELD = 'quote_cart_items';
   var hsScriptLoading = false;
+  // True from the moment the HubSpot form reports a successful submit until
+  // the modal is next opened. Gates the cart-change repaint below, so
+  // clearing the cart on submit can't overwrite the thank-you view with a
+  // "0 datasets selected" label.
+  var quoteSubmitted = false;
 
   function loadHubspotScript(cb, onerror) {
     if (window.hbspt) { cb(); return; }
@@ -628,8 +663,13 @@
         target: '#aq-hubspot-slot',
         onFormReady: function () { updateHubspotHiddenField(); },
         onFormSubmitted: function () {
+          // Do NOT close the modal here. HubSpot swaps the form out for
+          // its own thank-you message inside the iframe, and closing on
+          // submit meant nobody ever saw it. Clear the cart, switch the
+          // modal into its submitted state, and let the user close it.
+          quoteSubmitted = true;
           AppenQuoteCart.clear();
-          closeQuoteModal();
+          showSubmittedState();
         }
       });
     }, function () {
@@ -638,7 +678,34 @@
     });
   }
 
+  // Submitted: hide the cart chips and the "confirm the datasets below"
+  // blurb (both now stale -- the cart was just cleared), leaving HubSpot's
+  // thank-you message as the content, plus a Done button to close.
+  function showSubmittedState() {
+    document.getElementById('aq-modal-cart-label').classList.add('aq-hidden');
+    document.getElementById('aq-modal-chips').classList.add('aq-hidden');
+    document.querySelector('#aq-modal-overlay .aq-modal-desc').classList.add('aq-hidden');
+    document.getElementById('aq-modal-done').classList.add('aq-show');
+    document.getElementById('aq-modal-body-scroll').scrollTop = 0;
+  }
+
+  // Undo showSubmittedState, and force a fresh form -- the slot still holds
+  // the previous submission's thank-you message, so without resetting
+  // dataset.filled a user reopening the modal would get a stale thank-you
+  // and no form to fill in.
+  function resetSubmittedState() {
+    quoteSubmitted = false;
+    document.getElementById('aq-modal-cart-label').classList.remove('aq-hidden');
+    document.getElementById('aq-modal-chips').classList.remove('aq-hidden');
+    document.querySelector('#aq-modal-overlay .aq-modal-desc').classList.remove('aq-hidden');
+    document.getElementById('aq-modal-done').classList.remove('aq-show');
+    var slot = document.getElementById('aq-hubspot-slot');
+    slot.dataset.filled = '';
+    slot.innerHTML = '';
+  }
+
   function openQuoteModal() {
+    if (quoteSubmitted) resetSubmittedState();
     var items = AppenQuoteCart.getAll();
     renderModalChips(items);
     renderHubspotSlot();
@@ -674,7 +741,7 @@
     AppenQuoteCart.onChange(function (items) {
       renderQuoteTray(items);
       syncAddButtons(items);
-      if (document.getElementById('aq-modal-overlay').classList.contains('aq-open')) {
+      if (!quoteSubmitted && document.getElementById('aq-modal-overlay').classList.contains('aq-open')) {
         renderModalChips(items);
         updateHubspotHiddenField();
       }
