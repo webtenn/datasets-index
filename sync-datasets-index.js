@@ -84,7 +84,18 @@ const FIELDS = {
   "code-repos": {
     category: { key: "category", multi: false },
     industry: { key: "industry", multi: false },
-    description: { key: "description", multi: false },
+    // `description` is DELIBERATELY NOT SYNCED for this collection (2026-09-25).
+    // 64 of the 133 descriptions still name the company the item was renamed to
+    // anonymize, plus third parties that were never in the rename's scope, so
+    // they are withheld until the database owner rewrites them. Dropping the
+    // field here (rather than only hiding it in the UI) is what keeps the text
+    // out of the PUBLIC datasets-index.json and out of the catalog's own search
+    // index -- catalog-page.js and featured-datasets-embed.html also have their
+    // descriptionKey nulled for this collection, and the detail template's bound
+    // span is removed, but this line is the one that removes the data itself.
+    // To restore: un-comment, rebuild the index, purge jsdelivr, and reverse the
+    // three UI changes (the detail page needs its span re-bound in the Designer).
+    // description: { key: "description", multi: false },
     "years-in-business": { key: "yearsInBusiness", multi: false },
     established: { key: "established", multi: false },
     closed: { key: "closed", multi: false },

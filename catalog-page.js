@@ -79,7 +79,14 @@
         { key: 'primaryLanguages', label: 'Primary Language(s)', multi: true, hero: true },
         { key: 'employees',        label: '# Employees',         multi: false, size: true }
       ],
-      descriptionKey: 'description',
+      // No descriptionKey on purpose (2026-09-25) -- Code Repos descriptions are
+      // withheld until the database owner rewrites them, because 64 of 133 still
+      // name the company the item was renamed to anonymize. sync-datasets-index.js
+      // also stops syncing the field, so items arrive here with no `description`
+      // at all; this null is the belt-and-braces half, so a future index that
+      // carries the field again still won't surface it in the table or the
+      // search cards. descriptionKey: 'description' to restore.
+      descriptionKey: null,
       specFields: [
         { key: 'yearsInBusiness',  label: 'Years in Business' },
         { key: 'established',      label: 'Established' },
