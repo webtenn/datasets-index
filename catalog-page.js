@@ -321,15 +321,43 @@
       var n = searching ? AS.countFor(t.key) : 0;
       var cls = 'dc-tab' + (t.key === activeTab ? ' active' : '') +
         (isAll ? ' dc-tab-all' : '') + (searching && !n ? ' dc-tab-zero' : '');
-      return '<button type="button" class="' + cls + '" data-tab="' + t.key + '">' +
-        '<span class="dc-tab-num">' + num + '</span>' + escHtml(t.label) +
-        (searching ? '<span class="dc-tab-n">' + n + '</span>' : '') + '</button>';
+      var inner = '<span class="dc-tab-num">' + num + '</span>' + escHtml(t.label) +
+        (searching ? '<span class="dc-tab-n">' + n + '</span>' : '');
+
+      // The 8 collection tabs are real links to their own category page, so a
+      // crawler landing on /data-catalog has a path down to all 8. They are
+      // otherwise linked only from /ots-datasets, which is being retired. A
+      // plain left-click is intercepted below and switches tab in place, so
+      // the instant tab behaviour users have now is unchanged.
+      //
+      // "All results" is a search mode with no page behind it -- it stays a
+      // <button>.
+      //
+      // text-decoration sits inline rather than in style.css deliberately:
+      // .dc-tab already supplies display/color/background/border there, but
+      // adding one more declaration would mean bumping ?v= on the stylesheet
+      // <link> inside the Webflow component (jsdelivr serves it max-age=7d).
+      // Inline keeps this a push-and-purge change with no Webflow edit. Don't
+      // move it into style.css without bumping that token.
+      if (isAll) {
+        return '<button type="button" class="' + cls + '" data-tab="' + t.key + '">' +
+          inner + '</button>';
+      }
+      return '<a href="/data-catalog/' + t.key + '" class="' + cls + '" data-tab="' + t.key +
+        '" style="text-decoration:none">' + inner + '</a>';
     }).join('');
 
-    tabsEl.querySelectorAll('.dc-tab[data-tab]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (btn.dataset.tab === activeTab) return;
-        activeTab = btn.dataset.tab;
+    tabsEl.querySelectorAll('.dc-tab[data-tab]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        // Leave modified clicks to the browser so cmd/ctrl/shift-click still
+        // opens the category page in a new tab or window.
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        // Plain click on one of the 8 link tabs: switch in place, don't navigate.
+        if (el.tagName === 'A') e.preventDefault();
+        // Must stay after preventDefault -- otherwise clicking the tab you are
+        // already on would fall through and navigate.
+        if (el.dataset.tab === activeTab) return;
+        activeTab = el.dataset.tab;
         state.currentPage = 1;
         renderTabs(true);
         renderPanel();
