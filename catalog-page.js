@@ -43,6 +43,14 @@
   // `descriptionKey`, if set, is shown as prose above the spec grid (never
   // split into a list — these are prose fields, not tag lists; see
   // CLAUDE.md's "Dataset Description columns are prose" note).
+  // `indexGroupBy` groups the browse-all index at the foot of the panel; null
+  // means one flat A-Z list. Which field groups well is a property of the data,
+  // not of the field name, so these were measured against the live index rather
+  // than picked: only audio-catalogue (51 groups, largest 42 of 200) and
+  // pronunciation-dictionaries (76 groups, largest 17 of 154) have a field that
+  // actually spreads. code-repos' `industry` puts 64 of 133 in one bucket and
+  // its `category` 98 of 133, so it stays flat; the other five are small enough
+  // that grouping would produce mostly single-item headings.
   var TAB_CONFIG = {
     'tasks-verifiers': {
       description: 'Human-verified task and LLM verifier datasets across domains, ready to license today.',
@@ -57,6 +65,7 @@
         { key: 'qtyAvailable',      label: 'Qty Available',         multi: false, size: true }
       ],
       descriptionKey: 'description',
+      indexGroupBy: null,
       specFields: [
         { key: 'dataCoveragePeriod', label: 'Data Coverage Period' },
         { key: 'sourceAnnotation',   label: 'Source & Annotation' },
@@ -87,6 +96,7 @@
       // carries the field again still won't surface it in the table or the
       // search cards. descriptionKey: 'description' to restore.
       descriptionKey: null,
+      indexGroupBy: null,
       specFields: [
         { key: 'yearsInBusiness',  label: 'Years in Business' },
         { key: 'established',      label: 'Established' },
@@ -116,6 +126,7 @@
         { key: 'volume',     label: 'Volume',        multi: false, size: true }
       ],
       descriptionKey: 'datasetDescription',
+      indexGroupBy: null,
       specFields: [
         { key: 'dataFormat',       label: 'Data Format' },
         { key: 'unitType',         label: 'Unit (type)' },
@@ -139,6 +150,7 @@
         { key: 'volume',        label: 'Volume',           multi: false, size: true }
       ],
       descriptionKey: 'datasetDescription',
+      indexGroupBy: { key: 'languageGroup', noun: 'language' },
       specFields: [
         { key: 'domainContent',       label: 'Domain / Content' },
         { key: 'audioType',           label: 'Audio Type' },
@@ -168,6 +180,7 @@
         { key: 'volume',        label: 'Volume',         multi: false, size: true }
       ],
       descriptionKey: 'datasetDescription',
+      indexGroupBy: { key: 'languageGroup', noun: 'language' },
       specFields: [
         { key: 'unitType',         label: 'Unit (type)' },
         { key: 'dataFormat',       label: 'Data Format' },
@@ -188,6 +201,7 @@
         { key: 'peakHeadcount',  label: 'Peak Headcount',     multi: false, size: true }
       ],
       descriptionKey: 'businessDescription',
+      indexGroupBy: null,
       specFields: [
         { key: 'codeBaseAvailable', label: 'Code Base Available' },
         { key: 'operatingPeriod',   label: 'Operating Period' },
@@ -209,6 +223,7 @@
         { key: 'volume',     label: 'Volume',       multi: false, size: true }
       ],
       descriptionKey: 'datasetDescription',
+      indexGroupBy: null,
       specFields: [
         { key: 'domain',                     label: 'Domain' },
         { key: 'recordingDevice',            label: 'Recording Device' },
@@ -233,6 +248,7 @@
         { key: 'qtyAvailable',      label: 'Qty Available',         multi: false, size: true }
       ],
       descriptionKey: 'datasetDescription',
+      indexGroupBy: null,
       specFields: [
         { key: 'languages',          label: 'Language(s)' },
         { key: 'dataCoveragePeriod', label: 'Data Coverage Period' },
@@ -445,10 +461,14 @@
           cfg.columns.map(function (c) { return '<th>' + escHtml(c.label) + '</th>'; }).join('') +
         '</tr></thead><tbody id="dc-tbody"></tbody></table>' +
       '</div></div>' +
-      '<div class="dc-pagination" id="dc-pagination"></div>';
+      '<div class="dc-pagination" id="dc-pagination"></div>' +
+      '<div id="dc-index"></div>';
 
     buildFilterBar(cfg, items);
     applyAndRender(cfg, items);
+    // Full, unfiltered list -- see renderBrowseIndex. Built here rather than in
+    // applyAndRender so filtering never changes which links exist.
+    renderBrowseIndex(cfg, tab, items);
   }
 
   // ---- Filters ---------------------------------------------------------
@@ -649,6 +669,93 @@
         openQuoteModal();
       });
     });
+  }
+
+  // ---- Browse-all index ------------------------------------------------
+
+  // Every dataset in the active collection as a real <a href>, in a <details>
+  // that is closed by default.
+  //
+  // WHY: page 1 of each category table links only its own 20 rows, so 448 of
+  // the 596 detail pages had no internal link anywhere on the site and sat at
+  // "Discovered - currently not indexed" in Search Console -- unfetched, not
+  // judged. This is the change that takes every one of the 596 to a one-hop
+  // internal link. <details> hides its content visually WITHOUT removing it
+  // from the DOM, and Google follows links inside a closed disclosure, so the
+  // collapsed form carries the same crawl weight as the expanded one at ~95px
+  // instead of ~1,900px.
+  //
+  // Deliberately NOT narrowed by the filter bar or the search box. It is the
+  // complete list for the category; filtering it would make the set of
+  // crawlable links depend on UI state, which is the whole thing this is
+  // fixing. It is built once per panel render (renderLoadedPanel), not on
+  // every applyAndRender, for the same reason.
+
+  function sortedByTitle(items) {
+    return items.slice().sort(function (a, b) {
+      return (a.title || '').localeCompare(b.title || '');
+    });
+  }
+
+  // -> [{ label, items }], label null when the tab is ungrouped.
+  function groupForIndex(items, groupBy) {
+    if (!groupBy) return [{ label: null, items: sortedByTitle(items) }];
+    var map = {};
+    items.forEach(function (item) {
+      var v = item[groupBy.key];
+      if (Array.isArray(v)) v = v[0];
+      // Guard only -- both grouped tabs have a value on every item today.
+      var label = v || 'Unspecified';
+      if (!map[label]) map[label] = [];
+      map[label].push(item);
+    });
+    return Object.keys(map).sort(function (a, b) { return a.localeCompare(b); })
+      .map(function (label) { return { label: label, items: sortedByTitle(map[label]) }; });
+  }
+
+  function renderBrowseIndex(cfg, tab, items) {
+    var mount = document.getElementById('dc-index');
+    if (!mount) return;
+
+    // A collection that fits on one page already links every one of its items
+    // from the table above, so an index would be a duplicate of what is on
+    // screen -- it adds no crawlable link and reads as clutter. Suppresses it
+    // on tasks-verifiers (12) and other-sets (16); the other six keep it.
+    if (items.length <= PER_PAGE) { mount.innerHTML = ''; return; }
+
+    var groups = groupForIndex(items, cfg.indexGroupBy);
+
+    var body = groups.map(function (g) {
+      var links = g.items.map(function (item) {
+        var href = '/data-catalog/' + encodeURIComponent(item.collection) + '/' + encodeURIComponent(item.slug);
+        return '<li><a href="' + href + '">' + escHtml(item.title) + '</a></li>';
+      }).join('');
+      if (!g.label) return '<ul class="dc-index-list">' + links + '</ul>';
+      return '<div class="dc-index-group">' +
+        '<h3 class="dc-index-group-head">' + escHtml(g.label) +
+          '<span class="dc-index-group-n">' + g.items.length + '</span></h3>' +
+        '<ul class="dc-index-list">' + links + '</ul>' +
+      '</div>';
+    }).join('');
+
+    // Same plus-rotating-to-x glyph as the table row's expand control -- that
+    // is this catalog's disclosure idiom, and a chevron was explicitly
+    // rejected here once already for reading as a bullet point.
+    var icon = '<span class="dc-index-icon" aria-hidden="true">' +
+      '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>';
+
+    var sub = cfg.indexGroupBy
+      ? groups.length + ' ' + escHtml(cfg.indexGroupBy.noun) + ' groups'
+      : 'A&ndash;Z';
+
+    mount.innerHTML =
+      '<details class="dc-index">' +
+        '<summary class="dc-index-summary">' + icon +
+          '<span class="dc-index-label">Browse all ' + items.length + ' datasets in ' + escHtml(tab.label) + '</span>' +
+          '<span class="dc-index-sub">' + sub + '</span>' +
+        '</summary>' +
+        '<div class="dc-index-body">' + body + '</div>' +
+      '</details>';
   }
 
   function renderPagination(cfg, filtered) {

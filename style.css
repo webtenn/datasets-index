@@ -1,7 +1,8 @@
 /* Full Data Catalog page styles -- www.appen.com/data-catalog
    Extracted from data-catalog-embed.html 2026-09-10 to get the embed back under
-   Webflow's 50,000-char limit. Loaded as a <link> from the page's head custom code,
-   NOT injected by JS, so there is no flash of unstyled content.
+   Webflow's 50,000-char limit. Loaded as a <link> INSIDE the Webflow component --
+   not per-page head code, which would make a ?v= bump a 9-page edit. A <link> in
+   body is still parser-blocking, so there is no flash of unstyled content.
    Every rule is scoped to #appen-catalog, so it cannot leak into the Webflow page.
    CACHING: jsdelivr sends max-age=604800 (7d BROWSER) -- a purge clears the edge but
    NOT a returning visitor's browser. Bump the ?v= in the <link> on every change.
@@ -530,3 +531,109 @@
     #appen-catalog .dc-detail-actions { flex-wrap: wrap; }
   }
 
+
+  /* ---- Browse-all index ---------------------------------------------
+     Collapsed <details> at the foot of every category panel listing every
+     dataset in that collection as a real link. See renderBrowseIndex in
+     catalog-page.js for why it is unfiltered and why it stays in the DOM
+     while closed. Multi-column so 200 links read as a catalogue index
+     rather than a wall. */
+
+  #appen-catalog .dc-index {
+    margin-top: 44px;
+    border: 1.5px solid var(--dc-border);
+    border-radius: var(--dc-radius-md);
+    background: var(--dc-bg-surface);
+  }
+
+  #appen-catalog .dc-index-summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 18px;
+    cursor: pointer;
+    list-style: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* The default disclosure triangle would sit alongside our own plus glyph. */
+  #appen-catalog .dc-index-summary::-webkit-details-marker { display: none; }
+  #appen-catalog .dc-index-summary::marker { content: ''; }
+
+  #appen-catalog .dc-index-summary:hover .dc-index-label { color: var(--dc-accent); }
+  #appen-catalog .dc-index-summary:focus-visible {
+    outline: 2px solid var(--dc-accent);
+    outline-offset: -3px;
+    border-radius: var(--dc-radius-md);
+  }
+
+  #appen-catalog .dc-index-icon { display: flex; color: var(--dc-accent); transition: transform 0.2s; }
+  #appen-catalog .dc-index[open] .dc-index-icon { transform: rotate(45deg); }
+
+  #appen-catalog .dc-index-label { font-size: 14px; font-weight: 600; color: var(--dc-text); }
+
+  #appen-catalog .dc-index-sub {
+    margin-left: auto;
+    flex: none;
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--dc-text-muted);
+  }
+
+  #appen-catalog .dc-index-body {
+    padding: 18px 18px 20px;
+    border-top: 1px solid var(--dc-border);
+    column-count: 4;
+    column-gap: 28px;
+  }
+
+  #appen-catalog .dc-index-group { break-inside: avoid; margin: 0 0 18px; }
+
+  #appen-catalog .dc-index-group-head {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 0 0 5px;
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    /* --dc-accent on the white surface is 4.4:1; this is the darker
+       --dc-accent-text value the detail templates use. Kept literal for the
+       same reason catalog-search.js does -- the token isn't defined here. */
+    color: #8a5c44;
+  }
+
+  #appen-catalog .dc-index-group-n { font-size: 10.5px; color: var(--dc-text-muted); }
+
+  #appen-catalog .dc-index-list { list-style: none; margin: 0; padding: 0; }
+  #appen-catalog .dc-index-list li { break-inside: avoid; margin: 0 0 4px; }
+
+  #appen-catalog .dc-index-list a {
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: var(--dc-text-secondary);
+    text-decoration: none;
+    /* Code Repos titles are one unbroken token -- CSS gives no break
+       opportunity at "_", so without this they overflow the column. Same fix
+       as .fd-card-title in featured-datasets-embed.html. */
+    overflow-wrap: anywhere;
+  }
+
+  #appen-catalog .dc-index-list a:hover { color: var(--dc-accent); text-decoration: underline; }
+
+  @media (max-width: 1024px) { #appen-catalog .dc-index-body { column-count: 3; } }
+  @media (max-width: 800px)  { #appen-catalog .dc-index-body { column-count: 2; } }
+
+  @media (max-width: 520px) {
+    #appen-catalog .dc-index-body { column-count: 1; padding: 14px 14px 16px; }
+    #appen-catalog .dc-index-summary { padding: 14px; align-items: flex-start; flex-wrap: wrap; }
+    /* Wraps to its own row under the label (icon 13px + 10px gap = 23px).
+       Indent via padding, not margin: box-sizing is border-box here, so a
+       margin on top of flex-basis:100% pushes the row past the viewport. */
+    #appen-catalog .dc-index-sub { margin-left: 0; flex-basis: 100%; padding-left: 23px; }
+  }
