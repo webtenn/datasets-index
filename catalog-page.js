@@ -562,6 +562,10 @@
     return '<div><div class="dc-spec-item-label">' + escHtml(label) + '</div><div class="dc-spec-item-value">' + escHtml(display || 'N/A') + '</div></div>';
   }
 
+  function itemHref(item) {
+    return '/data-catalog/' + encodeURIComponent(item.collection) + '/' + encodeURIComponent(item.slug);
+  }
+
   function renderDetailActions(item, itemUrl) {
     var inCart = AppenQuoteCart.has(item.datasetId);
     return '<div class="dc-detail-actions">' +
@@ -596,6 +600,49 @@
     return '<div class="dc-detail-inner">' + top + hero + '<div class="dc-spec-label">Spec sheet</div><div class="dc-spec-grid">' + specs + '</div></div>';
   }
 
+  // Both the row's icon button and the detail panel's labelled pill carry
+  // data-add-id, so one pass over a scope wires whichever of them it holds.
+  // Called on the tbody at render time (row icons only exist then) and again
+  // on each detail panel as it is built. No double-binding: a panel's buttons
+  // do not exist during the tbody pass.
+  function wireQuoteButtons(scope) {
+    scope.querySelectorAll('[data-add-id]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var wasInCart = AppenQuoteCart.has(btn.dataset.addId);
+        AppenQuoteCart.toggle({
+          id: btn.dataset.addId,
+          name: btn.dataset.addName,
+          url: btn.dataset.addUrl
+        });
+        showToast(wasInCart ? 'Removed from quote' : 'Added to quote', wasInCart ? null : AQ_CHECK_ICON);
+      });
+    });
+
+    scope.querySelectorAll('[data-contact-id]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        AppenQuoteCart.add({
+          id: btn.dataset.contactId,
+          name: btn.dataset.contactName,
+          url: btn.dataset.contactUrl
+        });
+        openQuoteModal();
+      });
+    });
+  }
+
+  // Fill a detail row's empty <td> the first time it is opened. See
+  // renderTable for why the panel is not built up front.
+  function buildDetailPanel(detailRow, cfg, item) {
+    var cell = detailRow.firstElementChild;
+    cell.innerHTML = renderDetailPanel(cfg, item, itemHref(item));
+    // The panel's Add-to-quote pill renders its added state from the cart at
+    // build time, so a lazily-built panel opens in sync with a row icon that
+    // was toggled earlier. quote-cart.js's syncAddButtons re-queries the
+    // document on every change, so nothing has to register the new button.
+    wireQuoteButtons(cell);
+    detailRow.dataset.built = '1';
+  }
+
   function renderTable(cfg, filtered) {
     var tbody = document.getElementById('dc-tbody');
     var start = (state.currentPage - 1) * PER_PAGE;
@@ -615,7 +662,7 @@
         return '<td class="' + cls + '">' + escHtml(item[c.key] || '—') + '</td>';
       }).join('');
 
-      var itemUrl = '/data-catalog/' + encodeURIComponent(item.collection) + '/' + encodeURIComponent(item.slug);
+      var itemUrl = itemHref(item);
       var inCart = AppenQuoteCart.has(item.datasetId);
 
       var mainRow =
@@ -631,44 +678,33 @@
           '<td class="dc-name-cell"><div class="dc-name">' + (item.featured ? '<span class="dc-featured-star" title="Featured">&#9733;</span>' : '') + '<a class="dc-name-link" href="' + itemUrl + '">' + escHtml(item.title) + '</a></div><div class="dc-id">' + escHtml(item.datasetId) + '</div></td>' +
           cells +
         '</tr>';
-      var detailRow = '<tr class="dc-detail-row" data-detail="' + rowId + '"><td colspan="' + totalCols + '">' + renderDetailPanel(cfg, item, itemUrl) + '</td></tr>';
+      // The detail row is emitted EMPTY and filled on first expand. It used to
+      // be built here for all 20 rows whether or not anyone opened one, which
+      // measured 54 of the 78 DOM nodes per row -- 67% of the whole page -- for
+      // a behaviour no user sees until they click. The <tr> itself is kept
+      // (2 nodes) rather than inserted on demand so the .dc-detail-row /
+      // .dc-detail-row.open CSS and the [data-detail] lookup below are
+      // unchanged, and so row order can never be got wrong.
+      var detailRow = '<tr class="dc-detail-row" data-detail="' + rowId + '"><td colspan="' + totalCols + '"></td></tr>';
       return mainRow + detailRow;
     }).join('');
 
-    tbody.querySelectorAll('.dc-row').forEach(function (row) {
+    // The index here matches `page`: querySelectorAll returns document order,
+    // and the no-results case returned above, so .dc-row i is page[i].
+    tbody.querySelectorAll('.dc-row').forEach(function (row, i) {
       row.addEventListener('click', function (e) {
         if (e.target.closest('a, .dc-add-btn')) return;
         if (String(window.getSelection())) return;
         var detail = tbody.querySelector('[data-detail="' + row.dataset.row + '"]');
         var opening = !detail.classList.contains('open');
+        if (opening && !detail.dataset.built) buildDetailPanel(detail, cfg, page[i]);
         detail.classList.toggle('open', opening);
         row.classList.toggle('expanded', opening);
         row.querySelector('.dc-expand-btn').setAttribute('aria-expanded', opening);
       });
     });
 
-    tbody.querySelectorAll('[data-add-id]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var wasInCart = AppenQuoteCart.has(btn.dataset.addId);
-        AppenQuoteCart.toggle({
-          id: btn.dataset.addId,
-          name: btn.dataset.addName,
-          url: btn.dataset.addUrl
-        });
-        showToast(wasInCart ? 'Removed from quote' : 'Added to quote', wasInCart ? null : AQ_CHECK_ICON);
-      });
-    });
-
-    tbody.querySelectorAll('[data-contact-id]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        AppenQuoteCart.add({
-          id: btn.dataset.contactId,
-          name: btn.dataset.contactName,
-          url: btn.dataset.contactUrl
-        });
-        openQuoteModal();
-      });
-    });
+    wireQuoteButtons(tbody);
   }
 
   // ---- Browse-all index ------------------------------------------------
