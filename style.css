@@ -34,7 +34,7 @@
     font-family: var(--dc-font);
     background: var(--dc-bg-canvas);
     color: var(--dc-text);
-    padding: 56px 0 96px;
+    padding: 32px 0;
   }
 
   #appen-catalog .dc-inner {
@@ -43,7 +43,7 @@
   }
 
   @media (max-width: 640px) {
-    #appen-catalog { padding: 36px 0 64px; }
+    #appen-catalog { padding: 24px 0; }
   }
 
   /* Tabs */
