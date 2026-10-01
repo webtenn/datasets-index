@@ -651,6 +651,86 @@
     if (field) field.value = AppenQuoteCart.summaryText();
   }
 
+  // Overrides for the HubSpot form's own styling: white input backgrounds and a
+  // full-width black submit button. These MUST be injected into the form's own
+  // document -- it renders inside an iframe, which is a separate document, so
+  // neither style.css nor this module's injected <style> can reach it.
+  //
+  // The document is resolved exactly the way updateHubspotHiddenField() does
+  // (slot -> iframe -> contentDocument), because that is the path proven to work
+  // on this portal; the $form jQuery object onFormReady hands back was tried for
+  // the hidden field in Sept 2026 and silently failed, so it is kept here only
+  // as a fallback. Falls back again to the slot itself in case a future portal
+  // config renders the form inline rather than in an iframe.
+  var HS_FORM_CSS = [
+    // Inputs. HubSpot ships a pale blue-grey fill (#f5f8fa) with a blue-grey
+    // border (#cbd6e2) and text (#33475b), which reads as a foreign form once
+    // it sits in the catalog's warm palette. Font-size stays at HubSpot's 16px
+    // -- do NOT lower it, iOS Safari zooms a focused input under 16px (the same
+    // bug fixed on .dc-search-input in Sept 2026).
+    '.hs-input:not([type=file]) {',
+    '  background-color: #ffffff !important;',
+    '  border: 1px solid #e2e2de !important;',
+    '  border-radius: 6px !important;',
+    '  color: #121212 !important;',
+    '}',
+    '.hs-input:not([type=file]):hover { border-color: #c7c7c1 !important; }',
+    '.hs-input:not([type=file]):focus { border-color: #95654b !important; }',
+    // Keyboard users need focus to be distinct from hover, so it gets a real
+    // ring rather than sharing the hover treatment.
+    '.hs-input:not([type=file]):focus-visible {',
+    '  outline: 2px solid #95654b !important;',
+    '  outline-offset: 1px !important;',
+    '}',
+    '.hs-input::placeholder { color: #6e6e6e !important; opacity: 1 !important; }',
+    // Submit. Already renders #121212, so the colour is barely the point -- the
+    // real change is full width; HubSpot leaves it inline-block at ~173px in a
+    // ~474px form.
+    '.hs-button.primary, input[type=submit].hs-button {',
+    '  background-color: #121212 !important;',
+    '  border-color: #121212 !important;',
+    '  color: #ffffff !important;',
+    '  width: 100% !important;',
+    '  display: block !important;',
+    '  box-sizing: border-box !important;',
+    '  border-radius: 6px !important;',
+    '  font-size: 14px !important;',
+    '  font-weight: 600 !important;',
+    '  padding: 14px 24px !important;',
+    '  cursor: pointer !important;',
+    '  transition: background-color .2s ease, border-color .2s ease !important;',
+    '}',
+    '.hs-button.primary:hover, input[type=submit].hs-button:hover {',
+    '  background-color: #2b2b2b !important;',
+    '  border-color: #2b2b2b !important;',
+    '}',
+    '.hs-button.primary:focus-visible, input[type=submit].hs-button:focus-visible {',
+    '  outline: 2px solid #95654b !important;',
+    '  outline-offset: 2px !important;',
+    '}',
+    '.hs-button.primary:active, input[type=submit].hs-button:active {',
+    '  background-color: #000000 !important;',
+    '  border-color: #000000 !important;',
+    '}'
+  ].join('\n');
+
+  function styleHubspotForm($form) {
+    var slot = document.getElementById('aq-hubspot-slot');
+    var iframe = slot && slot.querySelector('iframe');
+    var doc = iframe ? iframe.contentDocument : null;
+    if (!doc && $form && $form[0]) doc = $form[0].ownerDocument;
+    if (!doc) doc = slot;
+    if (!doc) return;
+    // doc may be the slot element itself in the inline fallback, which has no
+    // .head and no .createElement -- a <style> appended to a div still applies.
+    var host = doc.head || doc;
+    if (!host || host.querySelector('style[data-aq-hs-style]')) return;
+    var style = (doc.createElement ? doc : document).createElement('style');
+    style.setAttribute('data-aq-hs-style', '');
+    style.textContent = HS_FORM_CSS;
+    host.appendChild(style);
+  }
+
   function renderHubspotSlot() {
     var slot = document.getElementById('aq-hubspot-slot');
     if (slot.dataset.filled) { updateHubspotHiddenField(); return; }
@@ -661,7 +741,10 @@
         formId: HS_FORM_ID,
         region: HS_REGION,
         target: '#aq-hubspot-slot',
-        onFormReady: function () { updateHubspotHiddenField(); },
+        onFormReady: function ($form) {
+          updateHubspotHiddenField();
+          styleHubspotForm($form);
+        },
         onFormSubmitted: function () {
           // Do NOT close the modal here. HubSpot swaps the form out for
           // its own thank-you message inside the iframe, and closing on
