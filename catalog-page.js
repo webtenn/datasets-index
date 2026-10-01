@@ -19,13 +19,13 @@
   // with `collection` — this embed fetches it once and splits client-side.
   var TABS = [
     { key: 'tasks-verifiers',              label: 'Tasks & Verifiers' },
-    { key: 'code-repos',                   label: 'Code Repos' },
-    { key: 'book-corpora',                 label: 'Book Corpora' },
-    { key: 'audio-catalogue',              label: 'Audio Catalog' },
+    { key: 'code-repos',                   label: 'Code Repositories' },
+    { key: 'book-corpora',                 label: 'Academic Text Corpora' },
+    { key: 'audio-catalogue',              label: 'Speech & Audio' },
     { key: 'pronunciation-dictionaries',   label: 'Pronunciation & POS Dictionaries' },
     { key: 'enterprise-company-data',      label: 'Enterprise Company Data' },
     { key: 'image-video-sets',             label: 'Image & Video' },
-    { key: 'other-sets',                   label: 'Other' }
+    { key: 'other-sets',                   label: 'Specialized Datasets' }
   ];
 
   // Per-tab filter + table + detail config. None of these 8 collections
@@ -53,7 +53,7 @@
   // that grouping would produce mostly single-item headings.
   var TAB_CONFIG = {
     'tasks-verifiers': {
-      description: 'Human-verified task and LLM verifier datasets across domains, ready to license today.',
+      description: 'Multi-step professional tasks that ship with the verifiers needed to score an agent\u2019s attempt automatically.',
       filters: [
         { key: 'category',           label: 'Category',              multi: false },
         { key: 'domainSubjectArea',  label: 'Domain / Subject Area', multi: true  }
@@ -76,7 +76,22 @@
       ]
     },
     'code-repos': {
-      description: 'Private and public code repositories with contributor, language, and quality metadata.',
+      // The ONLY tab whose blurb carries a link, so it uses descriptionHtml and
+      // bypasses escHtml. Safe because this is static author-written copy in
+      // this file -- never CMS or user data. Everything else stays on the
+      // escaped `description` path. Relative href, matching every other
+      // internal link in this file (verified /coding-datasets returns 200).
+      // The anchor is styled INLINE on purpose. style.css has no
+      // `.dc-panel-desc a` rule, so without this the link falls back to
+      // whatever link styling the surrounding Webflow page happens to define
+      // (in a bare harness it renders as default browser blue). Inline keeps
+      // it deterministic without a style.css change and its ?v= bump.
+      // --dc-accent (#95654b) measures 4.70:1 on --dc-bg-canvas (#f9f9f7),
+      // clearing the 4.5:1 AA floor for this 14px text.
+      descriptionHtml: 'Real production <a href="/coding-datasets" ' +
+        'style="color:var(--dc-accent);text-decoration:underline;' +
+        'text-underline-offset:2px;">coding datasets for LLMs</a> ' +
+        'with their full commit and review history, anonymized for training use.',
       filters: [
         { key: 'category',         label: 'Category',         multi: false },
         { key: 'industry',         label: 'Industry',         multi: false },
@@ -115,7 +130,7 @@
       ]
     },
     'book-corpora': {
-      description: 'Full-text academic journals and research reference texts, primarily STEM domains.',
+      description: 'Peer-reviewed journals and course textbooks in structured XML, weighted towards physics and engineering.',
       filters: [
         { key: 'domains', label: 'Domains', multi: true }
       ],
@@ -135,7 +150,7 @@
       ]
     },
     'audio-catalogue': {
-      description: 'Recorded and transcribed speech audio across locales, domains, and recording conditions.',
+      description: 'Read, conversational and call center speech across a wide range of languages and accents.',
       filters: [
         { key: 'locale',        label: 'Locale',           multi: true  },
         { key: 'country',       label: 'Country',          multi: false },
@@ -165,7 +180,7 @@
       ]
     },
     'pronunciation-dictionaries': {
-      description: 'Pronunciation, part-of-speech, and related linguistic dictionaries by locale and language.',
+      description: 'Phonetic lexicons, grammatical tagging and text normalization resources for ASR and TTS front ends.',
       filters: [
         { key: 'locale',        label: 'Locale',         multi: true  },
         { key: 'country',       label: 'Country',        multi: false },
@@ -189,7 +204,7 @@
       ]
     },
     'enterprise-company-data': {
-      description: 'Internal company operating, workforce, and tooling data across industries.',
+      description: 'How real businesses were actually run \u2014 the software they chose and the teams behind it.',
       filters: [
         { key: 'industry',       label: 'Industry',         multi: false },
         { key: 'platformsTools', label: 'Platform / Tools', multi: true  }
@@ -211,7 +226,7 @@
       ]
     },
     'image-video-sets': {
-      description: 'Annotated image and video datasets across recognition, detection, and OCR use cases.',
+      description: 'Everyday objects, documents, signage, gestures and faces, captured in real-world lighting and conditions.',
       filters: [
         { key: 'category', label: 'Category', multi: false },
         { key: 'domain',   label: 'Domain',    multi: true  }
@@ -237,7 +252,7 @@
       ]
     },
     'other-sets': {
-      description: 'Specialized datasets that don’t fit the other seven categories — CAD, clinical text, LLM training data, and more.',
+      description: 'Instruction tuning and red-teaming prompts, agentic trajectories, CAD files, location data and clinical imaging.',
       filters: [
         { key: 'category', label: 'Category', multi: false }
       ],
@@ -451,7 +466,7 @@
 
     panelEl.innerHTML =
       '<div class="dc-panel-head"><span class="dc-panel-count">' + countLabel + '</span><span class="dc-panel-title">' + escHtml(tab.label) + '</span></div>' +
-      '<p class="dc-panel-desc">' + escHtml(cfg.description) + '</p>' +
+      '<p class="dc-panel-desc">' + (cfg.descriptionHtml || escHtml(cfg.description)) + '</p>' +
       '<div class="dc-filterbar" id="dc-filterbar"></div>' +
       '<div class="dc-results-row"><span id="dc-results-count"></span></div>' +
       '<div class="dc-table-wrap"><div class="dc-table-scroll">' +
@@ -843,6 +858,35 @@
   });
   if (searchTab) activeTab = searchTab;
 
+  // Section heading above the tab strip.
+  //
+  // Inserted from JS rather than added to the Webflow embed so this stays a
+  // push-and-purge change with NO Webflow paste -- the embed is a component
+  // shared by all 9 catalog pages, so editing it is a 9-page propagation.
+  //
+  // Styled INLINE for the same reason SHIPPED 1's tab `text-decoration:none`
+  // is: putting the rule in style.css would force a ?v= bump on the
+  // stylesheet <link> inside that component, i.e. a Webflow paste per tweak.
+  // The size is expected to be reviewed, so keeping it inline means iterating
+  // costs nothing. If it settles and other rules move to style.css anyway,
+  // fold it in THEN and bump the token. See CLAUDE.md.
+  //
+  // --dc-* tokens resolve because #dc-tabs lives inside #appen-catalog, which
+  // is where they are defined; this heading is inserted as its sibling.
+  function mountBrowseHeading() {
+    if (!tabsEl || !tabsEl.parentNode) return;
+    if (document.getElementById('dc-browse-heading')) return;
+    var h = document.createElement('h2');
+    h.id = 'dc-browse-heading';
+    h.textContent = 'Browse AI training datasets by category.';
+    h.setAttribute('style',
+      'font-family:var(--dc-font);font-size:24px;font-weight:600;' +
+      'letter-spacing:-0.01em;line-height:1.3;color:var(--dc-text);' +
+      'margin:0 0 16px;');
+    tabsEl.parentNode.insertBefore(h, tabsEl);
+  }
+
+  mountBrowseHeading();
   renderTabs();
   renderPanel();
 
