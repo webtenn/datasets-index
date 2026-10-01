@@ -250,6 +250,14 @@
     border-radius: var(--dc-radius-md);
     box-shadow: var(--dc-shadow-sm);
     padding: 16px 18px;
+    /* Inherited by the title, description and size line. Code Repos names are a
+       single unbreakable token (CSS gives no break opportunity at "_"), so
+       CONSTRUCTION_PROPTECH_CODEBASE_001 painted past the card edge. Same fix as
+       .fd-card-title, the browse index and the 8 detail templates' root.
+       "anywhere" not "break-word" so min-content shrinks too. Safe to inherit:
+       .dc-badge is white-space: nowrap, where overflow-wrap is a no-op, so its
+       text-overflow: ellipsis is unaffected. */
+    overflow-wrap: anywhere;
   }
 
   #appen-catalog .dc-card-head {
