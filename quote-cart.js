@@ -747,6 +747,24 @@
       }
     });
     renderQuoteTray(AppenQuoteCart.getAll());
+
+    // Any element carrying data-open-quote-modal opens the modal. DELEGATED on
+    // document on purpose: the trigger is often a native Webflow element that
+    // lives OUTSIDE every embed and is parsed AFTER these scripts run (e.g. a
+    // CTA section at the foot of the catalog page), so a querySelectorAll here
+    // would find nothing. The 8 detail embeds also wire this attribute inside
+    // their own render(), scoped to their root -- a click there fires both
+    // handlers, which is harmless: renderHubspotSlot() sets slot.dataset.filled
+    // synchronously, so the second openQuoteModal() returns early and cannot
+    // build a second HubSpot iframe.
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!t || !t.closest) return;
+      var trigger = t.closest('[data-open-quote-modal]');
+      if (!trigger) return;
+      e.preventDefault();
+      openQuoteModal();
+    });
   }
 
 
