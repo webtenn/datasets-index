@@ -255,7 +255,7 @@
       ]
     },
     'other-sets': {
-      description: 'Instruction tuning and red-teaming prompts, agentic trajectories, CAD files, location data and clinical imaging.',
+      description: 'Instruction tuning and red-teaming corpora, agentic trajectories, CAD and schematics, clinical scans and infographics.',
       filters: [
         { key: 'category', label: 'Category', multi: false }
       ],
