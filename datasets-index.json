@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-07T15:39:28.542Z",
-  "totalItems": 599,
+  "lastUpdated": "2026-10-07T16:48:52.777Z",
+  "totalItems": 597,
   "items": [
     {
       "id": "6a998372c8ebe72e2d9ca4de",
@@ -16605,84 +16605,6 @@
       "datasetDescription": "Summaries of main events and themes from news data in 15 domains (Finance and economics, Lottery ticket, House property, Share certificate, Home furnishings, Education, Science & Technology, Society & people's livelihood, Fashion, Politics, Sports activities, Constellation, Game, Entertainment)",
       "yearOfCollection": [
         "2023"
-      ]
-    },
-    {
-      "id": "6a99884d834e4fbc0a922618",
-      "collection": "other-sets",
-      "title": "United States Mobile Location Data",
-      "slug": "location-mobile-us",
-      "url": "/data-catalog/other-sets/location-mobile-us",
-      "featured": false,
-      "datasetId": "LOCATION_MOBILE_US",
-      "languages": [],
-      "category": "Mobile GPS Location Data",
-      "domainSubjectArea": "",
-      "dataCoveragePeriod": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025"
-      ],
-      "qtyAvailable": "5 billion+ location events per day",
-      "generationSource": "",
-      "annotation": "",
-      "licenseType": "",
-      "dataFormat": [
-        "CSV",
-        "XLS",
-        "JSON",
-        "Parquet"
-      ],
-      "refreshCadence": "Yearly",
-      "source": "Quadrant",
-      "datasetDescription": "For enquiries relating to this data, please contact: Tim Solt, Quadrant VP Sales tim@quadrant.io;Book a meeting: https://meetings.hubspot.com/tim321;Quadrant (an Appen Company) is a global leader in the compilation and delivery of compliant, mobile (GPS) location data. Our location data panel is of the highest authenticity and quality, allowing you to easily integrate and perform location-based activities to support your business initiatives and solve a myriad of real-world problems.;The Quadrant location data panel contains 16 core metadata attributes, including all standard attributes such as Device ID, Latitude, Longitude, Timestamp, Horizontal Accuracy, and non-standard attributes such as Geohash and H3. Our historical data spans as far back as 2021, and data can be selected specific to your requirements (e.g., geography, timeframe, delivery cadence).;State or Market specific requests can be accommodated.;Please book a meeting to discuss your requirements and obtain a sample dataset to evaluate for your unique use case.",
-      "yearOfCollection": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025"
-      ]
-    },
-    {
-      "id": "6a99884cd3a0ae3d29797644",
-      "collection": "other-sets",
-      "title": "Mobile Location Data",
-      "slug": "location-mobile-global",
-      "url": "/data-catalog/other-sets/location-mobile-global",
-      "featured": false,
-      "datasetId": "LOCATION_MOBILE_GLOBAL",
-      "languages": [],
-      "category": "Mobile GPS Location Data",
-      "domainSubjectArea": "",
-      "dataCoveragePeriod": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025"
-      ],
-      "qtyAvailable": "20 billion+ location events per day",
-      "generationSource": "",
-      "annotation": "",
-      "licenseType": "",
-      "dataFormat": [
-        "CSV",
-        "XLS",
-        "JSON",
-        "Parquet"
-      ],
-      "refreshCadence": "Yearly",
-      "source": "Quadrant",
-      "datasetDescription": "For enquiries relating to this data, please contact: Tim Solt, Quadrant VP Sales tim@quadrant.io;Book a meeting: https://meetings.hubspot.com/tim321;Quadrant (an Appen Company) is a global leader in the compilation and delivery of compliant, mobile (GPS) location data. Our global location data panel is of the highest authenticity and quality, allowing you to easily integrate and perform location-based activities to support your business initiatives and solve a myriad of real-world problems.;The Quadrant location data panel contains 16 core metadata attributes, including all standard attributes such as Device ID, Latitude, Longitude, Timestamp, Horizontal Accuracy, and non-standard attributes such as Geohash and H3. Our historical data spans as far back as 2021, and data can be selected specific to your requirements (e.g., geography, timeframe, delivery cadence).;Country or Region specific requests can be accommodated.;Please book a meeting to discuss your requirements and obtain a sample dataset to evaluate for your unique use case.",
-      "yearOfCollection": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025"
       ]
     },
     {
