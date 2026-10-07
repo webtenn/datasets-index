@@ -441,8 +441,43 @@
     // they type -- scrollIntoView walks scrollable ancestors, so it can nudge
     // the page too -- reads as a glitch.
     if (!scrollActive) return;
+    centerActiveTab(scrollActive === 'init');
+  }
+
+  // Bring the active tab into view inside the horizontally-scrolling strip.
+  //
+  // Two modes, and the difference is load-bearing:
+  //
+  //   instant=false (a tab click) -- scrollIntoView, smooth, centered. The
+  //     user is already looking at the strip, so the animation shows them
+  //     which way it moved.
+  //
+  //   instant=true (first paint on /data-catalog/{key}) -- set scrollLeft on
+  //     the strip ITSELF, and do not animate: on first paint the tab should
+  //     already be visible rather than slide in.
+  //
+  //     scrollLeft rather than scrollIntoView because it is horizontal by
+  //     construction and so cannot move the page. Measured on the live
+  //     Location Data page at 375px, scrollIntoView with block:'nearest'
+  //     did NOT move it either -- the strip is already vertically visible at
+  //     scroll position 0, which is the normal load case. But that is a
+  //     property of where the strip happens to sit, not a guarantee:
+  //     scrollIntoView walks scrollable ancestors, so it is free to scroll
+  //     vertically whenever the strip is out of view (a restored scroll
+  //     position, a #hash landing, a future layout change). scrollLeft has
+  //     no such mode.
+  //
+  // scrollLeft clamps itself, so a left-edge tab on a wide viewport computes
+  // negative and lands at 0 -- no guard needed.
+  function centerActiveTab(instant) {
     var activeBtn = tabsEl.querySelector('.dc-tab.active');
-    if (activeBtn && activeBtn.scrollIntoView) {
+    if (!activeBtn) return;
+    if (instant) {
+      tabsEl.scrollLeft =
+        activeBtn.offsetLeft - (tabsEl.clientWidth - activeBtn.offsetWidth) / 2;
+      return;
+    }
+    if (activeBtn.scrollIntoView) {
       activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     }
   }
@@ -923,7 +958,12 @@
   }
 
   mountBrowseHeading();
-  renderTabs();
+  // 'init' only when the URL picked the tab (a direct hit on
+  // /data-catalog/{key}). Tab 09 sits off the right edge of the strip on a
+  // narrow viewport, so without this someone landing on the Location Data
+  // page sees a tab bar with no visible active tab. On the plain hub the
+  // default is TABS[0], already at the left edge, so nothing should move.
+  renderTabs(getPathTabKey() ? 'init' : false);
   renderPanel();
 
 })();
