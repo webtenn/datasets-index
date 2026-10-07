@@ -45,9 +45,10 @@ const COLLECTION_IDS = {
   "enterprise-company-data": "6a998541040b22801498a16e",
   "image-video-sets": "6a99854273f796e2592576b7",
   "other-sets": "6a998544fd732217e6612308",
+  "location-data": "6ac65f44d897cf8de739c444",
 };
 
-// All 8 single-dataset Collection Page templates are live (see CLAUDE.md in
+// All 9 single-dataset Collection Page templates are live (see CLAUDE.md in
 // the "Webflow OTS Datasets" project) at /data-catalog/{collection-key}/{slug}.
 const COLLECTION_URL_PREFIX = {
   "tasks-verifiers": "/data-catalog/tasks-verifiers",
@@ -58,6 +59,7 @@ const COLLECTION_URL_PREFIX = {
   "enterprise-company-data": "/data-catalog/enterprise-company-data",
   "image-video-sets": "/data-catalog/image-video-sets",
   "other-sets": "/data-catalog/other-sets",
+  "location-data": "/data-catalog/location-data",
 };
 
 // Per-collection field maps: Webflow field slug -> { key: json key, multi }.
@@ -194,6 +196,28 @@ const FIELDS = {
     source: { key: "source", multi: false },
     "dataset-description": { key: "datasetDescription", multi: false },
     "year-of-collection": { key: "yearOfCollection", multi: true },
+  },
+  // Quadrant's collection. multi flags mirror clean_location_data() in
+  // xlsx_clean.py exactly -- note qty-available, geographic-coverage and
+  // generation-source are prose that contains commas, NOT multi-value.
+  "location-data": {
+    category: { key: "category", multi: false },
+    "qty-available": { key: "qtyAvailable", multi: false },
+    "geographic-coverage": { key: "geographicCoverage", multi: false },
+    "coverage-level": { key: "coverageLevel", multi: false },
+    "number-of-attributes": { key: "numberOfAttributes", multi: false },
+    attributes: { key: "attributes", multi: true },
+    "data-format": { key: "dataFormat", multi: true },
+    "license-type": { key: "licenseType", multi: true },
+    "refresh-cadence": { key: "refreshCadence", multi: true },
+    "year-of-collection": { key: "yearOfCollection", multi: true },
+    "data-coverage-period": { key: "dataCoveragePeriod", multi: true },
+    "language-s": { key: "languages", multi: true },
+    "generation-source": { key: "generationSource", multi: false },
+    annotation: { key: "annotation", multi: false },
+    source: { key: "source", multi: false },
+    "privacy-policy-url": { key: "privacyPolicyUrl", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
   },
 };
 

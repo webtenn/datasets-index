@@ -14,9 +14,11 @@
 
   var PER_PAGE = 20;
 
-  // The 8 new per-category collections (see CLAUDE.md's "Current effort").
-  // All items for all 8 live in one datasets-index.json, tagged per item
+  // The 9 per-category collections (see CLAUDE.md's "Current effort").
+  // All items for all 9 live in one datasets-index.json, tagged per item
   // with `collection` — this embed fetches it once and splits client-side.
+  // location-data is Quadrant's (an Appen company); its source sheet is
+  // maintained outside the master catalog workbook.
   var TABS = [
     { key: 'tasks-verifiers',              label: 'Tasks & Verifiers' },
     { key: 'code-repos',                   label: 'Code Repositories' },
@@ -25,7 +27,8 @@
     { key: 'pronunciation-dictionaries',   label: 'Pronunciation & POS Dictionaries' },
     { key: 'enterprise-company-data',      label: 'Enterprise Company Data' },
     { key: 'image-video-sets',             label: 'Image & Video' },
-    { key: 'other-sets',                   label: 'Specialized Datasets' }
+    { key: 'other-sets',                   label: 'Specialized Datasets' },
+    { key: 'location-data',                label: 'Location Data' }
   ];
 
   // Per-tab filter + table + detail config. None of these 8 collections
@@ -273,6 +276,39 @@
         { key: 'refreshCadence',     label: 'Refresh Cadence' },
         { key: 'source',             label: 'Source' },
         { key: 'yearOfCollection',   label: 'Year of Collection' }
+      ]
+    },
+    'location-data': {
+      description: 'Privacy-first mobile GPS location data and points-of-interest data from Quadrant, an Appen company.',
+      filters: [
+        { key: 'category',      label: 'Category',       multi: false },
+        { key: 'coverageLevel', label: 'Coverage Level', multi: false }
+      ],
+      columns: [
+        { key: 'category',           label: 'Category',            multi: false },
+        { key: 'geographicCoverage', label: 'Geographic Coverage', multi: false },
+        { key: 'dataFormat',         label: 'Data Format',         multi: true, hero: true },
+        { key: 'qtyAvailable',       label: 'Qty Available',       multi: false, size: true }
+      ],
+      descriptionKey: 'datasetDescription',
+      // Grouped by Coverage Level rather than left flat: the sheet is heading
+      // for 50+ rows split by country/continent/city, and that is the axis a
+      // buyer browses on. Verified against the live data before setting it,
+      // per the trap in CLAUDE.md finding #4 — not guessed from the name.
+      indexGroupBy: { key: 'coverageLevel', noun: 'coverage level' },
+      specFields: [
+        { key: 'coverageLevel',      label: 'Coverage Level' },
+        { key: 'numberOfAttributes', label: 'Number of Attributes' },
+        { key: 'attributes',         label: 'Attributes' },
+        { key: 'licenseType',        label: 'License Type' },
+        { key: 'refreshCadence',     label: 'Refresh Cadence' },
+        { key: 'yearOfCollection',   label: 'Year of Collection' },
+        { key: 'dataCoveragePeriod', label: 'Data Coverage Period' },
+        { key: 'languages',          label: 'Language(s)' },
+        { key: 'generationSource',   label: 'Generation Source' },
+        { key: 'annotation',         label: 'Annotation' },
+        { key: 'source',             label: 'Source' },
+        { key: 'privacyPolicyUrl',   label: 'Privacy Policy' }
       ]
     }
   };

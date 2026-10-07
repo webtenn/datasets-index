@@ -417,6 +417,10 @@
   // Storage is localStorage only (no backend) — same-origin, so any
   // appen.com page sees the same cart. Items are keyed by Dataset ID.
   // ==================================================================
+  // Collections owned by Quadrant rather than Appen. Add a key here if
+  // Quadrant ever takes on a second collection.
+  var QUADRANT_URL_RE = /\/data-catalog\/location-data\//;
+
   var AppenQuoteCart = (function () {
     var STORAGE_KEY = 'appenQuoteCart';
     var listeners = [];
@@ -456,6 +460,26 @@
       // expects something else (e.g. IDs only, or JSON).
       summaryText: function () {
         return read().map(function (i) { return i.name + ' (' + i.id + ')'; }).join('\n');
+      },
+
+      // Which business each cart item belongs to, for HubSpot lead routing.
+      // Quadrant is an Appen company that runs independently and owns the
+      // location-data collection; everything else is Appen's.
+      //
+      // Derived from the item's own url (/data-catalog/{collection-key}/{slug}),
+      // which every add-to-quote button already supplies -- so no embed, no
+      // detail template and no index field has to change for this to work.
+      //
+      // Returns exactly one of: "Appen" | "Quadrant" | "Appen; Quadrant".
+      // The mixed case being its OWN value is the point: a HubSpot workflow
+      // matching "quote_cart_items contains LOCATION_" would match a mixed
+      // cart AND the default rule, leaving rule order to break the tie.
+      sourcesText: function () {
+        var seen = {};
+        read().forEach(function (i) {
+          seen[QUADRANT_URL_RE.test(i.url || '') ? 'Quadrant' : 'Appen'] = 1;
+        });
+        return Object.keys(seen).sort().join('; ');
       }
     };
   })();
@@ -609,6 +633,10 @@
   var HS_FORM_ID = '3d8a4044-3f16-4d0e-ad7d-8167e38dbfb8';
   var HS_REGION = 'na1';
   var HS_HIDDEN_FIELD = 'quote_cart_items';
+  // Single-line text contact property + hidden form field. Must exist on the
+  // form itself, not just as a property -- updateHubspotSourcesField() looks it
+  // up by name in the form document and silently no-ops if it isn't there.
+  var HS_SOURCES_FIELD = 'quote_cart_sources';
   var hsScriptLoading = false;
   // True from the moment the HubSpot form reports a successful submit until
   // the modal is next opened. Gates the cart-change repaint below, so
@@ -649,6 +677,8 @@
     var doc = iframe ? iframe.contentDocument : slot;
     var field = doc && doc.querySelector('[name="' + HS_HIDDEN_FIELD + '"]');
     if (field) field.value = AppenQuoteCart.summaryText();
+    var srcField = doc && doc.querySelector('[name="' + HS_SOURCES_FIELD + '"]');
+    if (srcField) srcField.value = AppenQuoteCart.sourcesText();
   }
 
   // Overrides for the HubSpot form's own styling: white input backgrounds and a
