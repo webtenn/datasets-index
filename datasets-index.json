@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-23T06:47:57.284Z",
-  "totalItems": 597,
+  "lastUpdated": "2026-10-23T14:21:16.722Z",
+  "totalItems": 646,
   "items": [
     {
       "id": "6a998372c8ebe72e2d9ca4de",
@@ -16740,6 +16740,3261 @@
       ]
     },
     {
+      "id": "6adb6cd161f82ec5a3d0b920",
+      "collection": "location-data",
+      "title": "Iraq Mobile Location Data",
+      "slug": "location-mobile-iq",
+      "url": "/data-catalog/location-data/location-mobile-iq",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_IQ",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "8.3 million+ daily location events from 583.4 thousand+ opted-in devices",
+      "geographicCoverage": "Iraq",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Iraq, with 8.3 million+ daily location events from 583.4 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Iraq coverage with 8.3 million+ daily location events from 583.4 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cd09b4643066901caaf",
+      "collection": "location-data",
+      "title": "Hong Kong Mobile Location Data",
+      "slug": "location-mobile-hk",
+      "url": "/data-catalog/location-data/location-mobile-hk",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_HK",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "20.9 million+ daily location events from 585.8 thousand+ opted-in devices",
+      "geographicCoverage": "Hong Kong",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Hong Kong, with 20.9 million+ daily location events from 585.8 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Hong Kong coverage with 20.9 million+ daily location events from 585.8 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ccf2cfa29a40f00000f",
+      "collection": "location-data",
+      "title": "Sweden Mobile Location Data",
+      "slug": "location-mobile-se",
+      "url": "/data-catalog/location-data/location-mobile-se",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_SE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "25.2 million+ daily location events from 645.8 thousand+ opted-in devices",
+      "geographicCoverage": "Sweden",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Sweden, with 25.2 million+ daily location events from 645.8 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Sweden coverage with 25.2 million+ daily location events from 645.8 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cceb851b6a3df44245b",
+      "collection": "location-data",
+      "title": "Belgium Mobile Location Data",
+      "slug": "location-mobile-be",
+      "url": "/data-catalog/location-data/location-mobile-be",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_BE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "23.5 million+ daily location events from 702 thousand+ opted-in devices",
+      "geographicCoverage": "Belgium",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Belgium, with 23.5 million+ daily location events from 702 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Belgium coverage with 23.5 million+ daily location events from 702 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ccc2cfa29a40fffff03",
+      "collection": "location-data",
+      "title": "Ecuador Mobile Location Data",
+      "slug": "location-mobile-ec",
+      "url": "/data-catalog/location-data/location-mobile-ec",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_EC",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "15.2 million+ daily location events from 710.1 thousand+ opted-in devices",
+      "geographicCoverage": "Ecuador",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Ecuador, with 15.2 million+ daily location events from 710.1 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Ecuador coverage with 15.2 million+ daily location events from 710.1 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc81bfd46727fb9bd1e",
+      "collection": "location-data",
+      "title": "Algeria Mobile Location Data",
+      "slug": "location-mobile-dz",
+      "url": "/data-catalog/location-data/location-mobile-dz",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_DZ",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "8.4 million+ daily location events from 787.2 thousand+ opted-in devices",
+      "geographicCoverage": "Algeria",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Algeria, with 8.4 million+ daily location events from 787.2 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Algeria coverage with 8.4 million+ daily location events from 787.2 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc71bfd46727fb9bcb2",
+      "collection": "location-data",
+      "title": "Kazakhstan Mobile Location Data",
+      "slug": "location-mobile-kz",
+      "url": "/data-catalog/location-data/location-mobile-kz",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_KZ",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "12.3 million+ daily location events from 842.2 thousand+ opted-in devices",
+      "geographicCoverage": "Kazakhstan",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Kazakhstan, with 12.3 million+ daily location events from 842.2 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Kazakhstan coverage with 12.3 million+ daily location events from 842.2 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc61bfd46727fb9bc7e",
+      "collection": "location-data",
+      "title": "Switzerland Mobile Location Data",
+      "slug": "location-mobile-ch",
+      "url": "/data-catalog/location-data/location-mobile-ch",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_CH",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "12.6 million+ daily location events from 892.6 thousand+ opted-in devices",
+      "geographicCoverage": "Switzerland",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Switzerland, with 12.6 million+ daily location events from 892.6 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Switzerland coverage with 12.6 million+ daily location events from 892.6 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc55170b642cad49b98",
+      "collection": "location-data",
+      "title": "Kenya Mobile Location Data",
+      "slug": "location-mobile-ke",
+      "url": "/data-catalog/location-data/location-mobile-ke",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_KE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "8.5 million+ daily location events from 963.3 thousand+ opted-in devices",
+      "geographicCoverage": "Kenya",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Kenya, with 8.5 million+ daily location events from 963.3 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Kenya coverage with 8.5 million+ daily location events from 963.3 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc5dd7b7870c4278d70",
+      "collection": "location-data",
+      "title": "Venezuela Mobile Location Data",
+      "slug": "location-mobile-ve",
+      "url": "/data-catalog/location-data/location-mobile-ve",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_VE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "22.8 million+ daily location events from 997.8 thousand+ opted-in devices",
+      "geographicCoverage": "Venezuela",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Venezuela, with 22.8 million+ daily location events from 997.8 thousand+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Venezuela coverage with 22.8 million+ daily location events from 997.8 thousand+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc45ae49a2e6e9d9dcd",
+      "collection": "location-data",
+      "title": "Israel Mobile Location Data",
+      "slug": "location-mobile-il",
+      "url": "/data-catalog/location-data/location-mobile-il",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_IL",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "40.1 million+ daily location events from 1 million+ opted-in devices",
+      "geographicCoverage": "Israel",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Israel, with 40.1 million+ daily location events from 1 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Israel coverage with 40.1 million+ daily location events from 1 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc27337e050f01390ca",
+      "collection": "location-data",
+      "title": "Lebanon Mobile Location Data",
+      "slug": "location-mobile-lb",
+      "url": "/data-catalog/location-data/location-mobile-lb",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_LB",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "12.5 million+ daily location events from 1.1 million+ opted-in devices",
+      "geographicCoverage": "Lebanon",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Lebanon, with 12.5 million+ daily location events from 1.1 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Lebanon coverage with 12.5 million+ daily location events from 1.1 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc11964335d99c5ab47",
+      "collection": "location-data",
+      "title": "Tunisia Mobile Location Data",
+      "slug": "location-mobile-tn",
+      "url": "/data-catalog/location-data/location-mobile-tn",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_TN",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "10.6 million+ daily location events from 1.1 million+ opted-in devices",
+      "geographicCoverage": "Tunisia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Tunisia, with 10.6 million+ daily location events from 1.1 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Tunisia coverage with 10.6 million+ daily location events from 1.1 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cc0bc639b93c3ef3f2d",
+      "collection": "location-data",
+      "title": "Bangladesh Mobile Location Data",
+      "slug": "location-mobile-bd",
+      "url": "/data-catalog/location-data/location-mobile-bd",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_BD",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "15.6 million+ daily location events from 1.5 million+ opted-in devices",
+      "geographicCoverage": "Bangladesh",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Bangladesh, with 15.6 million+ daily location events from 1.5 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Bangladesh coverage with 15.6 million+ daily location events from 1.5 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cbf85919acb20b995c5",
+      "collection": "location-data",
+      "title": "Yemen Mobile Location Data",
+      "slug": "location-mobile-ye",
+      "url": "/data-catalog/location-data/location-mobile-ye",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_YE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "19.6 million+ daily location events from 1.5 million+ opted-in devices",
+      "geographicCoverage": "Yemen",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Yemen, with 19.6 million+ daily location events from 1.5 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Yemen coverage with 19.6 million+ daily location events from 1.5 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cbf396d636d6476cb78",
+      "collection": "location-data",
+      "title": "United Arab Emirates Mobile Location Data",
+      "slug": "location-mobile-ae",
+      "url": "/data-catalog/location-data/location-mobile-ae",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_AE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "38.9 million+ daily location events from 1.7 million+ opted-in devices",
+      "geographicCoverage": "United Arab Emirates",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for United Arab Emirates, with 38.9 million+ daily location events from 1.7 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• United Arab Emirates coverage with 38.9 million+ daily location events from 1.7 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cbd146ec46f33d49c36",
+      "collection": "location-data",
+      "title": "Peru Mobile Location Data",
+      "slug": "location-mobile-pe",
+      "url": "/data-catalog/location-data/location-mobile-pe",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_PE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "40.7 million+ daily location events from 1.9 million+ opted-in devices",
+      "geographicCoverage": "Peru",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Peru, with 40.7 million+ daily location events from 1.9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Peru coverage with 40.7 million+ daily location events from 1.9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cbbe5d66939ac69bb73",
+      "collection": "location-data",
+      "title": "Ukraine Mobile Location Data",
+      "slug": "location-mobile-ua",
+      "url": "/data-catalog/location-data/location-mobile-ua",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_UA",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "21.5 million+ daily location events from 1.9 million+ opted-in devices",
+      "geographicCoverage": "Ukraine",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Ukraine, with 21.5 million+ daily location events from 1.9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Ukraine coverage with 21.5 million+ daily location events from 1.9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cba1f167e418467ffe5",
+      "collection": "location-data",
+      "title": "Chile Mobile Location Data",
+      "slug": "location-mobile-cl",
+      "url": "/data-catalog/location-data/location-mobile-cl",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_CL",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "41.4 million+ daily location events from 2.4 million+ opted-in devices",
+      "geographicCoverage": "Chile",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Chile, with 41.4 million+ daily location events from 2.4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Chile coverage with 41.4 million+ daily location events from 2.4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb9bedafe7699d26ee2",
+      "collection": "location-data",
+      "title": "Netherlands Mobile Location Data",
+      "slug": "location-mobile-nl",
+      "url": "/data-catalog/location-data/location-mobile-nl",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_NL",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "54.9 million+ daily location events from 2.5 million+ opted-in devices",
+      "geographicCoverage": "Netherlands",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Netherlands, with 54.9 million+ daily location events from 2.5 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Netherlands coverage with 54.9 million+ daily location events from 2.5 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb8396d636d6476c8cf",
+      "collection": "location-data",
+      "title": "Nigeria Mobile Location Data",
+      "slug": "location-mobile-ng",
+      "url": "/data-catalog/location-data/location-mobile-ng",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_NG",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "14.9 million+ daily location events from 2.7 million+ opted-in devices",
+      "geographicCoverage": "Nigeria",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Nigeria, with 14.9 million+ daily location events from 2.7 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Nigeria coverage with 14.9 million+ daily location events from 2.7 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb76fc406c87dd78f92",
+      "collection": "location-data",
+      "title": "Taiwan Mobile Location Data",
+      "slug": "location-mobile-tw",
+      "url": "/data-catalog/location-data/location-mobile-tw",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_TW",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "160.2 million+ daily location events from 2.9 million+ opted-in devices",
+      "geographicCoverage": "Taiwan",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Taiwan, with 160.2 million+ daily location events from 2.9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Taiwan coverage with 160.2 million+ daily location events from 2.9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb7bedafe7699d26dae",
+      "collection": "location-data",
+      "title": "South Africa Mobile Location Data",
+      "slug": "location-mobile-za",
+      "url": "/data-catalog/location-data/location-mobile-za",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_ZA",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "72.5 million+ daily location events from 3.4 million+ opted-in devices",
+      "geographicCoverage": "South Africa",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for South Africa, with 72.5 million+ daily location events from 3.4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• South Africa coverage with 72.5 million+ daily location events from 3.4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb6ae31a437f83ccf5f",
+      "collection": "location-data",
+      "title": "Pakistan Mobile Location Data",
+      "slug": "location-mobile-pk",
+      "url": "/data-catalog/location-data/location-mobile-pk",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_PK",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "57.7 million+ daily location events from 3.4 million+ opted-in devices",
+      "geographicCoverage": "Pakistan",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Pakistan, with 57.7 million+ daily location events from 3.4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Pakistan coverage with 57.7 million+ daily location events from 3.4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb4583ef3b3e4daa8b2",
+      "collection": "location-data",
+      "title": "Singapore Mobile Location Data",
+      "slug": "location-mobile-sg",
+      "url": "/data-catalog/location-data/location-mobile-sg",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_SG",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "125.8 million+ daily location events from 4 million+ opted-in devices",
+      "geographicCoverage": "Singapore",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Singapore, with 125.8 million+ daily location events from 4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Singapore coverage with 125.8 million+ daily location events from 4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb333949b9c12cdf927",
+      "collection": "location-data",
+      "title": "New Zealand Mobile Location Data",
+      "slug": "location-mobile-nz",
+      "url": "/data-catalog/location-data/location-mobile-nz",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_NZ",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "373.3 million+ daily location events from 4.5 million+ opted-in devices",
+      "geographicCoverage": "New Zealand",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for New Zealand, with 373.3 million+ daily location events from 4.5 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• New Zealand coverage with 373.3 million+ daily location events from 4.5 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb272c503adf0fadf19",
+      "collection": "location-data",
+      "title": "Colombia Mobile Location Data",
+      "slug": "location-mobile-co",
+      "url": "/data-catalog/location-data/location-mobile-co",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_CO",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "81.3 million+ daily location events from 4.9 million+ opted-in devices",
+      "geographicCoverage": "Colombia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Colombia, with 81.3 million+ daily location events from 4.9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Colombia coverage with 81.3 million+ daily location events from 4.9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb22abd9fcdc49c0423",
+      "collection": "location-data",
+      "title": "Russia Mobile Location Data",
+      "slug": "location-mobile-ru",
+      "url": "/data-catalog/location-data/location-mobile-ru",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_RU",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "192.6 million+ daily location events from 5.7 million+ opted-in devices",
+      "geographicCoverage": "Russia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Russia, with 192.6 million+ daily location events from 5.7 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Russia coverage with 192.6 million+ daily location events from 5.7 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb16fc406c87dd78e2b",
+      "collection": "location-data",
+      "title": "Spain Mobile Location Data",
+      "slug": "location-mobile-es",
+      "url": "/data-catalog/location-data/location-mobile-es",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_ES",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "100.4 million+ daily location events from 6 million+ opted-in devices",
+      "geographicCoverage": "Spain",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Spain, with 100.4 million+ daily location events from 6 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Spain coverage with 100.4 million+ daily location events from 6 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cb039c5c4622f82f299",
+      "collection": "location-data",
+      "title": "France Mobile Location Data",
+      "slug": "location-mobile-fr",
+      "url": "/data-catalog/location-data/location-mobile-fr",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_FR",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "129.5 million+ daily location events from 7.3 million+ opted-in devices",
+      "geographicCoverage": "France",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for France, with 129.5 million+ daily location events from 7.3 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• France coverage with 129.5 million+ daily location events from 7.3 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6caf1a30d1eb8f2a6f35",
+      "collection": "location-data",
+      "title": "Argentina Mobile Location Data",
+      "slug": "location-mobile-ar",
+      "url": "/data-catalog/location-data/location-mobile-ar",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_AR",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "509.1 million+ daily location events from 7.4 million+ opted-in devices",
+      "geographicCoverage": "Argentina",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Argentina, with 509.1 million+ daily location events from 7.4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Argentina coverage with 509.1 million+ daily location events from 7.4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cae146ec46f33d49505",
+      "collection": "location-data",
+      "title": "Türkiye Mobile Location Data",
+      "slug": "location-mobile-tr",
+      "url": "/data-catalog/location-data/location-mobile-tr",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_TR",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "119.9 million+ daily location events from 7.8 million+ opted-in devices",
+      "geographicCoverage": "Türkiye",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Türkiye, with 119.9 million+ daily location events from 7.8 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Türkiye coverage with 119.9 million+ daily location events from 7.8 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cad33949b9c12cdf858",
+      "collection": "location-data",
+      "title": "Italy Mobile Location Data",
+      "slug": "location-mobile-it",
+      "url": "/data-catalog/location-data/location-mobile-it",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_IT",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "97.8 million+ daily location events from 8.1 million+ opted-in devices",
+      "geographicCoverage": "Italy",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Italy, with 97.8 million+ daily location events from 8.1 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Italy coverage with 97.8 million+ daily location events from 8.1 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cac5ae49a2e6e9d9897",
+      "collection": "location-data",
+      "title": "Egypt Mobile Location Data",
+      "slug": "location-mobile-eg",
+      "url": "/data-catalog/location-data/location-mobile-eg",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_EG",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "53.8 million+ daily location events from 8.7 million+ opted-in devices",
+      "geographicCoverage": "Egypt",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Egypt, with 53.8 million+ daily location events from 8.7 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Egypt coverage with 53.8 million+ daily location events from 8.7 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6cab5ae49a2e6e9d982a",
+      "collection": "location-data",
+      "title": "Malaysia Mobile Location Data",
+      "slug": "location-mobile-my",
+      "url": "/data-catalog/location-data/location-mobile-my",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_MY",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "277.5 million+ daily location events from 9 million+ opted-in devices",
+      "geographicCoverage": "Malaysia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Malaysia, with 277.5 million+ daily location events from 9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Malaysia coverage with 277.5 million+ daily location events from 9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca99b4643066901b4e3",
+      "collection": "location-data",
+      "title": "Vietnam Mobile Location Data",
+      "slug": "location-mobile-vn",
+      "url": "/data-catalog/location-data/location-mobile-vn",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_VN",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "355.6 million+ daily location events from 15.2 million+ opted-in devices",
+      "geographicCoverage": "Vietnam",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Vietnam, with 355.6 million+ daily location events from 15.2 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Vietnam coverage with 355.6 million+ daily location events from 15.2 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca91bfd46727fb9b3d4",
+      "collection": "location-data",
+      "title": "Thailand Mobile Location Data",
+      "slug": "location-mobile-th",
+      "url": "/data-catalog/location-data/location-mobile-th",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_TH",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "411.7 million+ daily location events from 15.3 million+ opted-in devices",
+      "geographicCoverage": "Thailand",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Thailand, with 411.7 million+ daily location events from 15.3 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Thailand coverage with 411.7 million+ daily location events from 15.3 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca89b4643066901b3c4",
+      "collection": "location-data",
+      "title": "Saudi Arabia Mobile Location Data",
+      "slug": "location-mobile-sa",
+      "url": "/data-catalog/location-data/location-mobile-sa",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_SA",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "1.2 billion+ daily location events from 15.5 million+ opted-in devices",
+      "geographicCoverage": "Saudi Arabia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Saudi Arabia, with 1.2 billion+ daily location events from 15.5 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Saudi Arabia coverage with 1.2 billion+ daily location events from 15.5 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca7bedafe7699d268bf",
+      "collection": "location-data",
+      "title": "United Kingdom Mobile Location Data",
+      "slug": "location-mobile-gb",
+      "url": "/data-catalog/location-data/location-mobile-gb",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_GB",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "403.9 million+ daily location events from 15.9 million+ opted-in devices",
+      "geographicCoverage": "United Kingdom",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for United Kingdom, with 403.9 million+ daily location events from 15.9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• United Kingdom coverage with 403.9 million+ daily location events from 15.9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca680cf43923311db85",
+      "collection": "location-data",
+      "title": "Germany Mobile Location Data",
+      "slug": "location-mobile-de",
+      "url": "/data-catalog/location-data/location-mobile-de",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_DE",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "173 million+ daily location events from 16 million+ opted-in devices",
+      "geographicCoverage": "Germany",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Germany, with 173 million+ daily location events from 16 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Germany coverage with 173 million+ daily location events from 16 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca47cb3e450b2308a93",
+      "collection": "location-data",
+      "title": "Philippines Mobile Location Data",
+      "slug": "location-mobile-ph",
+      "url": "/data-catalog/location-data/location-mobile-ph",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_PH",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "898.9 million+ daily location events from 16.8 million+ opted-in devices",
+      "geographicCoverage": "Philippines",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Philippines, with 898.9 million+ daily location events from 16.8 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Philippines coverage with 898.9 million+ daily location events from 16.8 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca31a30d1eb8f2a69aa",
+      "collection": "location-data",
+      "title": "South Korea Mobile Location Data",
+      "slug": "location-mobile-kr",
+      "url": "/data-catalog/location-data/location-mobile-kr",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_KR",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "237.1 million+ daily location events from 20.2 million+ opted-in devices",
+      "geographicCoverage": "South Korea",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for South Korea, with 237.1 million+ daily location events from 20.2 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• South Korea coverage with 237.1 million+ daily location events from 20.2 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca20271c48becc24616",
+      "collection": "location-data",
+      "title": "Australia Mobile Location Data",
+      "slug": "location-mobile-au",
+      "url": "/data-catalog/location-data/location-mobile-au",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_AU",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "696.7 million+ daily location events from 12.9 million+ opted-in devices",
+      "geographicCoverage": "Australia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Australia, with 12.9 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Australia coverage with 12.9 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6ca09b4643066901af77",
+      "collection": "location-data",
+      "title": "Canada Mobile Location Data",
+      "slug": "location-mobile-ca",
+      "url": "/data-catalog/location-data/location-mobile-ca",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_CA",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "2.9 billion+ daily location events from 26.5 million+ opted-in devices",
+      "geographicCoverage": "Canada",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Canada, with 26.5 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Canada coverage with 26.5 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6c9f3e2b3be40c0621b2",
+      "collection": "location-data",
+      "title": "India Mobile Location Data",
+      "slug": "location-mobile-in",
+      "url": "/data-catalog/location-data/location-mobile-in",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_IN",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "2.9 billion+ daily location events from 51.8 million+ opted-in devices",
+      "geographicCoverage": "India",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for India, with 2.9 billion+ daily location events from 51.8 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• India coverage with 2.9 billion+ daily location events from 51.8 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6c9e2cfa29a40fffe7c5",
+      "collection": "location-data",
+      "title": "Indonesia Mobile Location Data",
+      "slug": "location-mobile-id",
+      "url": "/data-catalog/location-data/location-mobile-id",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_ID",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "3.1 billion+ daily location events from 75.6 million+ opted-in devices",
+      "geographicCoverage": "Indonesia",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Indonesia, with 3.1 billion+ daily location events from 75.6 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Indonesia coverage with 3.1 billion+ daily location events from 75.6 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6c9dbc639b93c3ef37a4",
+      "collection": "location-data",
+      "title": "Japan Mobile Location Data",
+      "slug": "location-mobile-jp",
+      "url": "/data-catalog/location-data/location-mobile-jp",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_JP",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "2.1 billion+ daily location events from 33.2 million+ opted-in devices",
+      "geographicCoverage": "Japan",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Japan, with 33.2 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Japan coverage with 33.2 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6c9c3e05202f360c3f14",
+      "collection": "location-data",
+      "title": "Mexico Mobile Location Data",
+      "slug": "location-mobile-mx",
+      "url": "/data-catalog/location-data/location-mobile-mx",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_MX",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "2.1 billion+ daily location events from 46.4 million+ opted-in devices",
+      "geographicCoverage": "Mexico",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Mexico, with 46.4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Mexico coverage with 46.4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
+      "id": "6adb6c9a2cfa29a40fffe369",
+      "collection": "location-data",
+      "title": "Brazil Mobile Location Data",
+      "slug": "location-mobile-br",
+      "url": "/data-catalog/location-data/location-mobile-br",
+      "featured": false,
+      "datasetId": "LOCATION_MOBILE_BR",
+      "category": "Mobile GPS Location Data",
+      "qtyAvailable": "2.6 billion+ daily location events from 101 million+ opted-in devices",
+      "geographicCoverage": "Brazil",
+      "coverageLevel": "Country",
+      "numberOfAttributes": "17",
+      "attributes": [
+        "device ID",
+        "ID type",
+        "latitude",
+        "longitude",
+        "horizontal accuracy",
+        "timestamp",
+        "IP address",
+        "device OS",
+        "user agent",
+        "country",
+        "source ID",
+        "publisher ID",
+        "geo hash",
+        "H3",
+        "consent",
+        "device manufacturer",
+        "device model"
+      ],
+      "dataFormat": [
+        "CSV",
+        "XLS",
+        "JSON",
+        "Parquet"
+      ],
+      "licenseType": [
+        "One-off",
+        "On-demand",
+        "Annual subscription"
+      ],
+      "refreshCadence": [
+        "Daily"
+      ],
+      "yearOfCollection": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "dataCoveragePeriod": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "languages": [],
+      "generationSource": "Trusted industry developer partners and a broad network of apps. Data is ethically sourced from opted-in, first-party devices.",
+      "annotation": "",
+      "source": "Quadrant",
+      "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
+      "datasetDescription": "Mobile location data for Brazil, with 2.6 billion+ daily location events from 101 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• Brazil coverage with 2.6 billion+ daily location events from 101 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+    },
+    {
       "id": "6ac65f6ca67a8c94ffe701b2",
       "collection": "location-data",
       "title": "Points of Interest (POI) Data",
@@ -16801,28 +20056,28 @@
       "featured": false,
       "datasetId": "LOCATION_MOBILE_US",
       "category": "Mobile GPS Location Data",
-      "qtyAvailable": "5 billion+ daily location events",
+      "qtyAvailable": "14.7 billion+ daily location events from 388.4 million+ opted-in devices",
       "geographicCoverage": "United States",
       "coverageLevel": "Country",
       "numberOfAttributes": "17",
       "attributes": [
-        "device_id",
-        "id_type",
+        "device ID",
+        "ID type",
         "latitude",
         "longitude",
-        "horizontal_accuracy",
+        "horizontal accuracy",
         "timestamp",
-        "ip_address",
-        "device_os",
-        "user_agent",
+        "IP address",
+        "device OS",
+        "user agent",
         "country",
-        "source_id",
-        "publisher_id",
-        "geohash",
+        "source ID",
+        "publisher ID",
+        "geo hash",
         "H3",
         "consent",
-        "device_manufacturer",
-        "device_model"
+        "device manufacturer",
+        "device model"
       ],
       "dataFormat": [
         "CSV",
@@ -16857,7 +20112,7 @@
       "annotation": "",
       "source": "Quadrant",
       "privacyPolicyUrl": "https://www.quadrant.io/privacy-policy",
-      "datasetDescription": "Mobile location data for the United States, with 5 billion+ daily location events from opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• United States coverage with 5 billion+ daily location events\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
+      "datasetDescription": "Mobile location data for United States, with 388.4 million+ opted-in devices.\n\nQuadrant (an Appen Company) provides privacy first location data and foot traffic data for AI, analytics, and business intelligence. Our enterprise grade datasets helps organizations uncover meaningful geographic patterns across industries, including retail, commercial real estate, transportation, urban planning, financial services, market research, tourism, and consumer insights. Whether you are evaluating site performance, measuring market activity, building predictive models, or analyzing movement trends, our data provides a trusted foundation for scalable analysis.\n\nQuadrant location data contains 17 attributes covering device, location, time, source, consent, and geographic information.\n\nQuadrant offers flexible geographic coverage that adapts to your business requirements. We are not limited to predefined geographic boundaries, so we can support reporting and analysis at the city, county, state, regional, and national levels, making it easier to analyze points of interest, compare markets, evaluate trade areas, and understand mobility across locations.\n\nKey benefits include:\n\n• United States coverage with 388.4 million+ opted-in devices\n• Privacy first and quality controlled location data\n• AI ready and analytics friendly datasets\n• Flexible geographic reporting at the city, county, state, regional, and national levels\n• Historical data available from 2022 onwards\n• Daily data refresh\n• Tailored datasets aligned with your business requirements\n• Expert technical support from our in house data specialists\n• In house quality assurance and quality flags for deduplication, one ping devices, teleportation, and more\n• Flexible commercial models including one off, on demand, and annual subscriptions\n• Data available in CSV, XLS, JSON, and Parquet formats"
     },
     {
       "id": "6ac65f67af428ccbf01616ba",
