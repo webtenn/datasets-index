@@ -708,9 +708,18 @@
     '.hs-input:not([type=file]):focus { border-color: #95654b !important; }',
     // Keyboard users need focus to be distinct from hover, so it gets a real
     // ring rather than sharing the hover treatment.
+    //
+    // The ring is INSET (negative outline-offset) and that is load-bearing, not
+    // taste. Measured on the live form: the iframe body is 474px with zero
+    // margin or padding, and every .hs-input spans it exactly (0 -> 474), so an
+    // outward ring is painted outside the iframe's viewport on the left and
+    // right and clipped away by its own overflow:hidden / scrolling="no" --
+    // the top and bottom bands survive, which is why a focused field looked
+    // cropped down its two sides (user report 2026-11-04). Drawing the ring
+    // inside the border box keeps all four sides visible and shifts nothing.
     '.hs-input:not([type=file]):focus-visible {',
     '  outline: 2px solid #95654b !important;',
-    '  outline-offset: 1px !important;',
+    '  outline-offset: -2px !important;',
     '}',
     '.hs-input::placeholder { color: #6e6e6e !important; opacity: 1 !important; }',
     // Submit. Already renders #121212, so the colour is barely the point -- the
@@ -734,9 +743,11 @@
     '  background-color: #2b2b2b !important;',
     '  border-color: #2b2b2b !important;',
     '}',
+    // Inset for the same reason as the inputs above -- the button is width:100%
+    // of the same 474px iframe body, so an outward ring is clipped left/right.
     '.hs-button.primary:focus-visible, input[type=submit].hs-button:focus-visible {',
     '  outline: 2px solid #95654b !important;',
-    '  outline-offset: 2px !important;',
+    '  outline-offset: -3px !important;',
     '}',
     '.hs-button.primary:active, input[type=submit].hs-button:active {',
     '  background-color: #000000 !important;',
