@@ -34,14 +34,48 @@
   }
   #aq-cart *, #aq-modal-overlay * { box-sizing: border-box; }
 
+  /* #aq-cart is ALWAYS on screen now (2026-11-19): it holds the
+     "Request a sample" link, which shows on every page, beside the Quote
+     pill, which still only appears once the cart has an item. The panel
+     stays absolutely positioned against this box, so it still opens
+     above the pill's right edge. */
   #aq-cart {
     position: fixed;
     right: 20px;
     bottom: 20px;
     z-index: 999;
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
-  #aq-cart.aq-visible { display: block; }
+  #aq-cart:not(.aq-visible) .aq-pill { display: none; }
+
+  /* Black with a light border (same treatment as the toast) so it stays
+     visible over the #121212 site footer as well as the cream page. */
+  #aq-cart .aq-sample {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 18px;
+    background: #121212;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    border-radius: 100px;
+    box-shadow: 0 6px 20px rgba(18,18,18,0.28);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+  #aq-cart .aq-sample:hover { background: #2e2e2e; color: #fff; }
+  /* Double ring: the white half reads on the black footer, the
+     terracotta half on the cream page. */
+  #aq-cart .aq-sample:focus-visible { outline: none; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #95654b; }
 
   #aq-cart .aq-pill {
     display: flex;
@@ -102,12 +136,16 @@
     flex-direction: column;
     overflow: hidden;
   }
-  #aq-cart.aq-open .aq-panel { display: flex; }
+  #aq-cart.aq-visible.aq-open .aq-panel { display: flex; }
 
+  /* Mobile: alone, the sample link stays compact in the corner rather
+     than becoming a permanent full-width bar; once the Quote pill shows,
+     the two split the row equally, as the pill alone used to fill it. */
   @media (max-width: 480px) {
-    #aq-cart { right: 12px; bottom: 12px; left: 12px; }
+    #aq-cart { right: 12px; bottom: 12px; left: 12px; justify-content: flex-end; }
     #aq-cart .aq-panel { width: 100%; }
-    #aq-cart .aq-pill { width: 100%; justify-content: center; }
+    #aq-cart.aq-visible .aq-sample,
+    #aq-cart.aq-visible .aq-pill { flex: 1 1 0; justify-content: center; }
   }
 
   #aq-cart .aq-panel-head {
@@ -489,7 +527,11 @@
 
   function escAttr(str) { return escHtml(str).replace(/'/g, '&#39;'); }
 
+  var SAMPLE_URL = 'https://www.appen.com/data-catalog/request-dataset-sample';
+
   function buildQuoteCartUI() {
+    // No point offering the sample link on the sample-request page itself.
+    var onSamplePage = /\/data-catalog\/request-dataset-sample\/?$/.test(location.pathname);
     var cartEl = document.createElement('div');
     cartEl.id = 'aq-cart';
     cartEl.innerHTML =
@@ -503,6 +545,7 @@
         '<div class="aq-list" id="aq-list"></div>' +
         '<div class="aq-panel-foot"><button type="button" class="aq-btn-request" id="aq-request">Request quote</button></div>' +
       '</div>' +
+      (onSamplePage ? '' : '<a class="aq-sample" id="aq-sample" href="' + SAMPLE_URL + '">Request a sample</a>') +
       '<button type="button" class="aq-pill" id="aq-pill" aria-expanded="false" aria-haspopup="true">' +
         '<span class="aq-pill-count" id="aq-pill-count">0</span>' +
         '<span class="aq-pill-label">Quote</span>' +
@@ -582,6 +625,10 @@
     if (!cartEl) return;
     var hadItems = cartEl.classList.contains('aq-visible');
     cartEl.classList.toggle('aq-visible', items.length > 0);
+    if (!items.length && cartEl.classList.contains('aq-open')) {
+      cartEl.classList.remove('aq-open');
+      document.getElementById('aq-pill').setAttribute('aria-expanded', 'false');
+    }
     if (!hadItems && items.length > 0) {
       cartEl.classList.add('aq-just-added');
       setTimeout(function () { cartEl.classList.remove('aq-just-added'); }, 300);
