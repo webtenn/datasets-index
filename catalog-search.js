@@ -372,7 +372,9 @@
       '<div class="dc-search" id="dc-search">' +
         '<span class="dc-search-icon">' + SEARCH_ICON + '</span>' +
         '<input type="search" class="dc-search-input" id="dc-search-input" ' +
-          'placeholder="Search all 9 categories…" aria-label="Search all datasets" ' +
+          // Count comes from the page's TABS, so adding a collection can't
+          // leave this reading a stale number (it said "9" when 11 shipped).
+          'placeholder="Search all ' + opts.tabs.length + ' categories\u2026" aria-label="Search all datasets" ' +
           'autocomplete="off" spellcheck="false">' +
         '<button type="button" class="dc-search-clear" id="dc-search-clear" aria-label="Clear search">' + CLEAR_ICON + '</button>' +
       '</div>';
