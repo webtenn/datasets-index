@@ -5,12 +5,28 @@
    Plain <script src> tags block and execute in document order, and this file needs
    AppenQuoteCart + window.AppenCatalogSearch to already exist. The tags sit AFTER
    #appen-catalog in the embed, so the mount points are parsed before this runs.
-   Purge on every change: https://purge.jsdelivr.net/gh/webtenn/datasets-index@main/catalog-page.js */
+   HOSTING (2026-11-20): moving from jsdelivr to Cloudflare Pages, which deploys
+   on every push to main -- no purge. While anything still loads this from
+   jsdelivr, purge after a change: https://purge.jsdelivr.net/gh/webtenn/datasets-index@main/catalog-page.js */
 
 (function () {
 
-  // jsdelivr mirror; ?t= is an HOURLY bucket, not Date.now() -- see CLAUDE.md. Purge on rebuild.
-  var RAW_INDEX_URL = 'https://cdn.jsdelivr.net/gh/webtenn/datasets-index@main/datasets-index.json';
+  // The index is fetched from WHEREVER THIS FILE WAS LOADED FROM, so the
+  // Webflow component's <script src> is the single place the host is named.
+  // Served from Cloudflare Pages (2026-11-20) it reads Pages' own copy, which
+  // each deploy replaces atomically -- no purge, no cache-buster, a short
+  // max-age set in _headers. Served from jsdelivr it keeps the old behaviour:
+  // its 7-day browser max-age needs the HOURLY ?t= bucket (see CLAUDE.md).
+  // window.DATA_CATALOG_INDEX_URL overrides both (used by the local harness).
+  // Must be read here, at top level: document.currentScript is only set while
+  // a classic script is first executing.
+  var JSDELIVR_INDEX_URL = 'https://cdn.jsdelivr.net/gh/webtenn/datasets-index@main/datasets-index.json';
+  var SCRIPT_SRC = (document.currentScript && document.currentScript.src) || '';
+  var RAW_INDEX_URL = window.DATA_CATALOG_INDEX_URL ||
+    (/^https:\/\/[^/]+\.pages\.dev\//.test(SCRIPT_SRC)
+      ? SCRIPT_SRC.replace(/[^/?#]*([?#].*)?$/, '') + 'datasets-index.json'
+      : JSDELIVR_INDEX_URL);
+  var INDEX_NEEDS_BUCKET = RAW_INDEX_URL === JSDELIVR_INDEX_URL;
 
   var PER_PAGE = 20;
 
@@ -566,7 +582,7 @@
 
   function loadIndex() {
     if (!indexPromise) {
-      indexPromise = fetch(RAW_INDEX_URL + '?t=' + Math.floor(Date.now() / 36e5))
+      indexPromise = fetch(INDEX_NEEDS_BUCKET ? RAW_INDEX_URL + '?t=' + Math.floor(Date.now() / 36e5) : RAW_INDEX_URL)
         .then(function (res) { return res.json(); })
         .then(function (data) {
           byTab = {};

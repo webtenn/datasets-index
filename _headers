@@ -1,0 +1,16 @@
+# Cloudflare Pages response headers (added 2026-11-20).
+# ONE rule on purpose: Pages applies every rule that matches a path and joins a
+# header set twice with a comma, so overlapping rules would produce
+# "Cache-Control: a, b". Keep it to a single /* block.
+#
+# max-age=300: a browser re-checks at most every 5 minutes, and Pages answers a
+# re-check with a 304 (ETag) when nothing changed. Each deploy replaces the files
+# on Cloudflare's edge atomically, so there is no purge step and no ?v= / ?t=
+# cache-buster needed anywhere.
+#
+# CORS: catalog-page.js fetch()es datasets-index.json from appen.com, a different
+# origin. <script> and <link> tags don't need it; the fetch does.
+/*
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
