@@ -14,14 +14,19 @@
 
   var PER_PAGE = 20;
 
-  // The 9 per-category collections (see CLAUDE.md's "Current effort").
-  // All items for all 9 live in one datasets-index.json, tagged per item
+  // The 11 per-category collections (see CLAUDE.md's "Current effort").
+  // Tab numbers (01-11) come from array position, so order here IS the
+  // displayed order. cad-bim and egocentric-video (2026-11-20) sit after
+  // code-repos at the user's request.
+  // All items for all 11 live in one datasets-index.json, tagged per item
   // with `collection` — this embed fetches it once and splits client-side.
   // location-data is Quadrant's (an Appen company); its source sheet is
   // maintained outside the master catalog workbook.
   var TABS = [
     { key: 'tasks-verifiers',              label: 'Tasks & Verifiers' },
     { key: 'code-repos',                   label: 'Code Repositories' },
+    { key: 'cad-bim',                      label: 'CAD & BIM' },
+    { key: 'egocentric-video',             label: 'Egocentric Video' },
     { key: 'book-corpora',                 label: 'Academic Text Corpora' },
     { key: 'audio-catalogue',              label: 'Speech & Audio' },
     { key: 'pronunciation-dictionaries',   label: 'Pronunciation & POS Dictionaries' },
@@ -255,7 +260,7 @@
       ]
     },
     'other-sets': {
-      description: 'Instruction tuning and red-teaming corpora, agentic trajectories, CAD and schematics, clinical scans and infographics.',
+      description: 'Instruction tuning and red-teaming corpora, agentic trajectories, clinical scans and infographics.',
       filters: [
         { key: 'category', label: 'Category', multi: false }
       ],
@@ -309,6 +314,61 @@
         { key: 'annotation',         label: 'Annotation' },
         { key: 'source',             label: 'Source' },
         { key: 'privacyPolicyUrl',   label: 'Privacy Policy' }
+      ]
+    },
+    // CAD & BIM (2026-11-20). Holds the interior design/fit-out CAD+BIM set
+    // plus CAD_001 and SCHEM_001, moved here from other-sets. multi flags
+    // mirror clean_cad_bim() in xlsx_clean.py: domainSubjectArea is multi
+    // HERE, single on other-sets (CLAUDE.md finding #4).
+    'cad-bim': {
+      description: 'Native CAD drawings, BIM models and PCB schematics from real professional design and engineering projects.',
+      filters: [
+        { key: 'category',          label: 'Category',              multi: false },
+        { key: 'domainSubjectArea', label: 'Domain / Subject Area', multi: true  }
+      ],
+      columns: [
+        { key: 'category',          label: 'Category',              multi: false },
+        { key: 'domainSubjectArea', label: 'Domain / Subject Area', multi: true },
+        { key: 'dataFormat',        label: 'Data Format',           multi: true, hero: true },
+        { key: 'qtyAvailable',      label: 'Qty Available',         multi: false, size: true }
+      ],
+      descriptionKey: 'datasetDescription',
+      indexGroupBy: null,
+      specFields: [
+        { key: 'projects',           label: 'Projects' },
+        { key: 'disciplines',        label: 'Disciplines' },
+        { key: 'dataCoveragePeriod', label: 'Data Coverage Period' },
+        { key: 'generationSource',   label: 'Generation Source' },
+        { key: 'annotation',         label: 'Annotation' },
+        { key: 'licenseType',        label: 'License Type' },
+        { key: 'refreshCadence',     label: 'Refresh Cadence' },
+        { key: 'source',             label: 'Source' },
+        { key: 'yearOfCollection',   label: 'Year of Collection' }
+      ]
+    },
+    // Egocentric Video (2026-11-20). multi flags mirror
+    // clean_egocentric_video(): dataFormat, deliverables, annotation.
+    'egocentric-video': {
+      description: 'First-person video of real commercial work, captured with head-mounted stereo cameras and synchronized IMU.',
+      filters: [
+        { key: 'category', label: 'Category', multi: false }
+      ],
+      columns: [
+        { key: 'category',      label: 'Category',       multi: false },
+        { key: 'captureDevice', label: 'Capture Device', multi: false },
+        { key: 'dataFormat',    label: 'Data Format',    multi: true, hero: true },
+        { key: 'volume',        label: 'Volume',         multi: false, size: true }
+      ],
+      descriptionKey: 'datasetDescription',
+      indexGroupBy: null,
+      specFields: [
+        { key: 'domainSetting',    label: 'Domain / Setting' },
+        { key: 'sensors',          label: 'Sensors' },
+        { key: 'deliverables',     label: 'Deliverables' },
+        { key: 'annotation',       label: 'Annotation' },
+        { key: 'qualityAssurance', label: 'Quality Assurance' },
+        { key: 'collectionModel',  label: 'Collection Model' },
+        { key: 'generationSource', label: 'Generation Source' }
       ]
     }
   };

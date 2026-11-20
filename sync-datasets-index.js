@@ -46,6 +46,8 @@ const COLLECTION_IDS = {
   "image-video-sets": "6a99854273f796e2592576b7",
   "other-sets": "6a998544fd732217e6612308",
   "location-data": "6ac65f44d897cf8de739c444",
+  "cad-bim": "6b008319479f940fb07a01d0",
+  "egocentric-video": "6b00831a876348e44f0ace3b",
 };
 
 // All 9 single-dataset Collection Page templates are live (see CLAUDE.md in
@@ -60,6 +62,8 @@ const COLLECTION_URL_PREFIX = {
   "image-video-sets": "/data-catalog/image-video-sets",
   "other-sets": "/data-catalog/other-sets",
   "location-data": "/data-catalog/location-data",
+  "cad-bim": "/data-catalog/cad-bim",
+  "egocentric-video": "/data-catalog/egocentric-video",
 };
 
 // Per-collection field maps: Webflow field slug -> { key: json key, multi }.
@@ -218,6 +222,42 @@ const FIELDS = {
     source: { key: "source", multi: false },
     "privacy-policy-url": { key: "privacyPolicyUrl", multi: false },
     "dataset-description": { key: "datasetDescription", multi: false },
+  },
+  // CAD & BIM (2026-11-20). multi flags mirror clean_cad_bim() in
+  // xlsx_clean.py -- domain-subject-area is multi HERE, single on other-sets.
+  "cad-bim": {
+    category: { key: "category", multi: false },
+    "domain-subject-area": { key: "domainSubjectArea", multi: true },
+    projects: { key: "projects", multi: false },
+    disciplines: { key: "disciplines", multi: false },
+    "qty-available": { key: "qtyAvailable", multi: false },
+    "data-format": { key: "dataFormat", multi: true },
+    "data-coverage-period": { key: "dataCoveragePeriod", multi: false },
+    "generation-source": { key: "generationSource", multi: false },
+    annotation: { key: "annotation", multi: false },
+    "license-type": { key: "licenseType", multi: false },
+    "refresh-cadence": { key: "refreshCadence", multi: false },
+    source: { key: "source", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
+  },
+  // Egocentric Video (2026-11-20). multi flags mirror clean_egocentric_video().
+  "egocentric-video": {
+    category: { key: "category", multi: false },
+    "domain-setting": { key: "domainSetting", multi: false },
+    volume: { key: "volume", multi: false },
+    "capture-device": { key: "captureDevice", multi: false },
+    sensors: { key: "sensors", multi: false },
+    "data-format": { key: "dataFormat", multi: true },
+    deliverables: { key: "deliverables", multi: true },
+    annotation: { key: "annotation", multi: true },
+    "quality-assurance": { key: "qualityAssurance", multi: false },
+    "collection-model": { key: "collectionModel", multi: false },
+    "generation-source": { key: "generationSource", multi: false },
+    "license-type": { key: "licenseType", multi: false },
+    source: { key: "source", multi: false },
+    "dataset-description": { key: "datasetDescription", multi: false },
+    "year-of-collection": { key: "yearOfCollection", multi: false },
   },
 };
 
