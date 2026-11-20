@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-20T18:53:26.413Z",
-  "totalItems": 650,
+  "lastUpdated": "2026-11-20T19:01:19.052Z",
+  "totalItems": 648,
   "items": [
     {
       "id": "6a998372c8ebe72e2d9ca4de",
@@ -16606,54 +16606,6 @@
       "yearOfCollection": [
         "2023"
       ]
-    },
-    {
-      "id": "6a99884b31d6f8d8f3d0f4c0",
-      "collection": "other-sets",
-      "title": "CAD Files",
-      "slug": "cad-001",
-      "url": "/data-catalog/other-sets/cad-001",
-      "featured": false,
-      "datasetId": "CAD_001",
-      "languages": [],
-      "category": "2D/3D CAD",
-      "domainSubjectArea": "Robotics, Electrical, Mechanical, Architectural, 3D Printing, Aerospace, Automotive",
-      "dataCoveragePeriod": [
-        "2018 - 2026"
-      ],
-      "qtyAvailable": "1200000",
-      "generationSource": "Human-Generated (Real Enterprise Usage)",
-      "annotation": "Real-World Capture / Expert Review",
-      "licenseType": "Perpetual — Non-Exclusive",
-      "dataFormat": [],
-      "refreshCadence": "Monthly",
-      "source": "Third Party Vendor",
-      "datasetDescription": "CAD files from a variety of fields - Robotics, Engineering, Electrical, Architecture and more - including multi-part projects",
-      "yearOfCollection": [
-        "2018 - 2026"
-      ]
-    },
-    {
-      "id": "6a99884a13e9a932dc47688e",
-      "collection": "other-sets",
-      "title": "PCB Schematics",
-      "slug": "schem-001",
-      "url": "/data-catalog/other-sets/schem-001",
-      "featured": false,
-      "datasetId": "SCHEM_001",
-      "languages": [],
-      "category": "2D/3D CAD + Schematics and Project Files + SVG Renders",
-      "domainSubjectArea": "Electronics",
-      "dataCoveragePeriod": [],
-      "qtyAvailable": "25000",
-      "generationSource": "Human-Generated (Real Enterprise Usage)",
-      "annotation": "Real-World Capture / Expert Review",
-      "licenseType": "Perpetual — Non-Exclusive",
-      "dataFormat": [],
-      "refreshCadence": "Monthly",
-      "source": "Third Party Vendor",
-      "datasetDescription": "real‑world hardware designs—schematics,\nlayouts, BoMs (Bills of Materials), and matching firmware—to empower multimodal models that\ngenerate, debug, and optimize electronic products.",
-      "yearOfCollection": []
     },
     {
       "id": "6a9988498dcd14d10a92cafe",
